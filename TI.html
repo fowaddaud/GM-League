@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <link rel = "shortcut icon" type = "image/png" href = "file:///Users/fowaddaud/Desktop/GVO.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links (top top thing) */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) (teams tabs) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 50px;
+  height: 100%;
+  width: 100%
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-style: hidden;
+    border-top-color: rgb(0, 0, 0);
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-right-color: rgb(0, 0, 0);
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-left-color: rgb(0, 0, 0);
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+table td, table th {
+    border: 1px solid rgb(77,75,75);
+}
+
+/* Style the tab content */
+.vtabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 80%;
+  height: 450px;
+}
+
+.scrollmenu {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+.scrollmenu {
+  width: 100%;
+  height: 50px;
+}
+.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.scrollmenu a:hover {
+  background-color: #777;
+}
+
+.tab {
+  float: center;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: inline-block;
+  background-color: inherit;
+  color: black;
+  padding: 0px 0px;
+  width: 175px;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+#Home {background-color: gray;}
+#Teams {background-color: gray;}
+#Transactions {background-color: gray;}
+#Trade_Machine {background-color: gray;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Teams', this, 'green')">Teams</button>
+<button class="tablink" onclick="openPage('Transactions', this, 'blue')">Transactions</button>
+<button class="tablink" onclick="openPage('Trade_Machine', this, 'orange')">Trade Machine</button>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="Teams" class="tabcontent">
+  <h2>Teams</h2>
+  <div class="tab">
+<div class="scrollmenu">
+  <button class="tablinks" onclick="openCity(event, 'Phoenix Suns')" id="vdefaultOpen"><a>Phoenix Suns</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Portland Trail Blazers')"><a>Portland Trail Blazers</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Sacramento Kings')"><a>Sacramento Kings</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Toronto Raptors')"><a>Toronto Raptors</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Utah Jazz')"><a>Utah Jazz</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Washington Wizards')"><a>Washington Wizards</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Atlanta Hawks')"><a>Atlanta Hawks</a></button>
+</div>
+</div>
+
+<div class="w3-container">
+<div id="Phoenix Suns" class="vtabcontent">
+  <h3>Phoenix Suns</h3>
+    <table class="w3-table-all">
+    <tr>
+      <th>Name</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>James Harden</td>
+      <td>$27,093,018</td>
+      <td> idk </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Not Booker</td>
+      <td>$11,592,857</td>
+      <td><div class="w3-text-green">$12,178,571</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rodney Hood</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Thomas Bryant</td>
+      <td>$8,000,000</td>
+      <td>$7,710,000</td>
+      <td>$7,350,000</td>
+      <td><div class="w3-text-green">$7,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Aaron Fox</td>
+      <td>$6,392,760</td>
+      <td>$8,099,627</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Buddy Hield</td>
+      <td>$4,861,208</td>
+      <td>$26,000,000</td>
+      <td>$27,000,000</td>
+      <td>$29,000,000</td>
+      <td>$31,000,000</td>
+    </tr>
+    <tr>
+      <td>Bobby Portis</td>
+      <td>$5,250,000</td>
+      <td>$5,000,000</td>
+      <td>$4,750,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Zach Collins</td>
+      <td>$4,240,200</td>
+      <td>$5,406,255</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Harry Giles</td>
+      <td>$2,578,800</td>
+      <td>$3,976,510</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kevin Knox</td>
+      <td>$4,380,120</td>
+      <td>$4,588,680</td>
+      <td>$5,845,978</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Seth Curry</td>
+      <td>$2,171,529</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick McCaw</td>
+      <td>$1,676,700</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Shamorie Ponds</td>
+      <td>$897,158</td>
+      <td>$942,015</td>
+      <td>$989,116</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dzazan Musa</td>
+      <td>$1,911,600</td>
+      <td>$2,002,800</td>
+      <td>$3,615,054</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gary Trent Jr</td>
+      <td>$1,416,852</td>
+      <td>$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>SUM(3+4)</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+    </tr>
+  </table>
+</div>
+
+<div id="Portland Trail Blazers" class="vtabcontent">
+  <h3>Portland Trail Blazers</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Utah Jazz" class="vtabcontent">
+  <h3>Utah Jazz</h3>
+  <p>Paris is not the capital of France.</p> 
+</div>
+
+<div id="Washington Wizards" class="vtabcontent">
+  <h3>Washington Wizards</h3>
+  <p>D.C. of Washington</p> 
+</div>
+
+<div id="Atlanta Hawks" class="vtabcontent">
+  <h3>Atlanta Hawks</h3>
+  <p>Georgia. ATL.</p> 
+</div>
+
+<div id="Boston Celtics" class="vtabcontent">
+  <h3>Boston Celtics</h3>
+  <p>Will the Jays win a championship?</p> 
+</div>
+
+<div id="Sacramento Kings" class="vtabcontent">
+  <h3>Sacramento Kings</h3>
+<div class="w3-container">
+
+  <table class="w3-table-all">
+    <tr>
+      <th>Name</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Hassan Whiteside</td>
+      <td>$27,093,018</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tony Snell</td>
+      <td>$11,592,857</td>
+      <td><div class="w3-text-green">$12,178,571</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rodney Hood</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Thomas Bryant</td>
+      <td>$8,000,000</td>
+      <td>$7,710,000</td>
+      <td>$7,350,000</td>
+      <td><div class="w3-text-green">$7,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Aaron Fox</td>
+      <td>$6,392,760</td>
+      <td>$8,099,627</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Buddy Hield</td>
+      <td>$4,861,208</td>
+      <td>$26,000,000</td>
+      <td>$27,000,000</td>
+      <td>$29,000,000</td>
+      <td>$31,000,000</td>
+    </tr>
+    <tr>
+      <td>Bobby Portis</td>
+      <td>$5,250,000</td>
+      <td>$5,000,000</td>
+      <td>$4,750,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Zach Collins</td>
+      <td>$4,240,200</td>
+      <td>$5,406,255</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Harry Giles</td>
+      <td>$2,578,800</td>
+      <td>$3,976,510</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kevin Knox</td>
+      <td>$4,380,120</td>
+      <td>$4,588,680</td>
+      <td>$5,845,978</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Seth Curry</td>
+      <td>$2,171,529</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick McCaw</td>
+      <td>$1,676,700</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Shamorie Ponds</td>
+      <td>$897,158</td>
+      <td>$942,015</td>
+      <td>$989,116</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dzazan Musa</td>
+      <td>$1,911,600</td>
+      <td>$2,002,800</td>
+      <td>$3,615,054</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gary Trent Jr</td>
+      <td>$1,416,852</td>
+      <td>$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>SUM(3+4)</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+    </tr>
+  </table>
+</div>
+</div>
+
+<div id="Toronto Raptors" class="vtabcontent">
+  <h3>Toronto Raptors</h3>
+  <p>Toronto is the capital of Ontario.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, vtabcontent, tablinks;
+  vtabcontent = document.getElementsByClassName("vtabcontent");
+  for (i = 0; i < vtabcontent.length; i++) {
+    vtabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="vdefaultOpen" and click on it
+document.getElementById("vdefaultOpen").click();
+</script>
+</div>
+</div>
+
+<div id="Transactions" class="tabcontent">
+  <h2>Transactions</h2>
+  <p>Feb 1st 2020: Toronto Raptors trade Pascal Siakam and OG Anunoby to the Indiana  Pacers for Victor Oladipo</p>
+  <p>Feb 1st 2020: Sacramento Kings trade Marvin Bagley to the Houston Rockets for Clint Capela</p>
+</div>
+
+<div id="Trade_Machine" class="tabcontent">
+  <h2>Trade Machine</h2>
+  <p>Who we are and what we do.</p>
+  
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
