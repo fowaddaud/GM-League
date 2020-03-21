@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title></title>
-   <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico">
+   <title></title>   
+   <link rel = "shortcut icon" type = "image/png" href = "GVO.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -25,7 +25,7 @@ body, html {
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
-  width: 25%;
+  width: 16.666%;
 }
 
 .greentext{
@@ -191,21 +191,26 @@ table td, table th {
 
 #Home {background-color: gray;}
 #Teams {background-color: gray;}
-#Transactions {background-color: gray;}
+#Transaction_History {background-color: gray;}
+#Submit_Transaction {background-color: gray;}
+#Standings {background-color: gray;}
 #Trade_Machine {background-color: gray;}
 </style>
 </head>
 <body>
 
 <button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('Teams', this, 'green')">Teams</button>
-<button class="tablink" onclick="openPage('Transactions', this, 'blue')">Transactions</button>
-<button class="tablink" onclick="openPage('Trade_Machine', this, 'orange')">Trade Machine</button>
+<button class="tablink" onclick="openPage('Teams', this, 'orange')">Teams</button>
+<button class="tablink" onclick="openPage('Transaction_History', this, 'green')">Transaction History</button>
+<button class="tablink" onclick="openPage('Submit_Transaction', this, 'blue')">Submit Transaction</button>
+<button class="tablink" onclick="openPage('Standings', this, 'magenta')">Standings</button>
+<button class="tablink" onclick="openPage('Trade_Machine', this, 'purple')">Trade Machine</button>
 </div>
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
   <p>Home is where the heart is..</p>
+  <img src="/Users/fowaddaud/Desktop/GVO.png" alt="GVO" width="500" height="333">
 </div>
 
 <div id="Teams" class="tabcontent">
@@ -543,12 +548,15 @@ table td, table th {
   <button class="tablink2" onclick="openItem(event, 'Roster')" id="sdefaultOpen"><b>Roster</b></button>
   <button class="tablink2" onclick="openItem(event, 'Draft Assets')"><b>Draft Assets</b></button>
   <button class="tablink2" onclick="openItem(event, 'Rotation')"><b>Rotation</b></button>
+  <button class="tablink2" onclick="openItem(event, 'Cap Holds')"><b>Cap Holds</b></button>
 </div>
      <div id="Roster" class="stabcontent">
        <h3> Roster </h3>
 	<table class="w3-table-all">
     <tr>
       <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
       <th>19/20</th>
       <th>20/21</th>
       <th>21/22</th>
@@ -557,6 +565,8 @@ table td, table th {
     </tr>
     <tr>
       <td>James Harden</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$27,093,018</td>
       <td> idk </td>
       <td> </td>
@@ -565,6 +575,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Not Booker</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$11,592,857</td>
       <td class = "greentext"> $12,178,571</td>
       <td> </td>
@@ -573,6 +585,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Rodney Hood</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$10,000,000</td>
       <td>$10,000,000</td>
       <td>$10,000,000</td>
@@ -581,6 +595,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Trey Lyles?</td>
+      <th>00</th>
+      <th>SG</th>
       <td>money</td>
       <td>more money</td>
       <td>dolla dolla bills</td>
@@ -589,6 +605,8 @@ table td, table th {
     </tr>
     <tr>
       <td>De'Aaron Fox</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$6,392,760</td>
       <td>$8,099,627</td>
       <td> </td>
@@ -597,6 +615,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Buddy Hield</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$4,861,208</td>
       <td>$26,000,000</td>
       <td>$27,000,000</td>
@@ -605,6 +625,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Bobby Portis</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$5,250,000</td>
       <td>$5,000,000</td>
       <td>$4,750,000</td>
@@ -613,6 +635,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Zach Collins</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$4,240,200</td>
       <td>$5,406,255</td>
       <td> </td>
@@ -621,6 +645,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Harry Giles</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$2,578,800</td>
       <td>$3,976,510</td>
       <td> </td>
@@ -629,6 +655,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Kevin Knox</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$4,380,120</td>
       <td>$4,588,680</td>
       <td>$5,845,978</td>
@@ -637,6 +665,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Seth Curry</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$2,171,529</td>
       <td> </td>
       <td> </td>
@@ -645,6 +675,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Patrick McCaw</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$1,676,700</td>
       <td> </td>
       <td> </td>
@@ -653,6 +685,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Shamorie Ponds</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$897,158</td>
       <td>$942,015</td>
       <td>$989,116</td>
@@ -661,6 +695,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Dzazan Musa</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$1,911,600</td>
       <td>$2,002,800</td>
       <td>$3,615,054</td>
@@ -669,6 +705,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Gary Trent Jr</td>
+      <th>00</th>
+      <th>SG</th>
       <td>$1,416,852</td>
       <td>$1,663,861</td>
       <td> </td>
@@ -677,6 +715,8 @@ table td, table th {
     </tr>
     <tr>
       <td>Sum</td>
+      <th> </th>
+      <th> </th>
       <td>SUM(3+4)</td>
       <td>Sum</td>
       <td>Sum</td>
@@ -777,8 +817,11 @@ table td, table th {
      <div id="Rotation" class="stabcontent">
        <h3> Rotation </h3>
      </div>
+     
+     <div id="Cap Holds" class="stabcontent">
+       <h3> Cap Holds </h3>
+     </div>
 </div>
-
 
 
 <script>
@@ -822,15 +865,25 @@ document.getElementById("sdefaultOpen").click();
 </div>
 </div>
 
-<div id="Transactions" class="tabcontent">
+<div id="Transaction_History" class="tabcontent">
   <h2>Transactions</h2>
   <p>Feb 1st 2020: Toronto Raptors trade Pascal Siakam and OG Anunoby to the Indiana  Pacers for Victor Oladipo</p>
   <p>Feb 1st 2020: Sacramento Kings trade Marvin Bagley to the Houston Rockets for Clint Capela</p>
 </div>
 
+<div id="Submit_Transaction" class="tabcontent">
+  <h2>Submit a Transaction</h2>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_tCmyvvWFdNgjgQrzo14kUfdkM0lNScFiR1n_Y5GVGVp4pg/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</div>
+
+<div id="Standings" class="tabcontent">
+  <h2>Standings</h2>
+  <p>Standings will go here</p>
+</div>
+
 <div id="Trade_Machine" class="tabcontent">
   <h2>Trade Machine</h2>
-  <p>Who we are and what we do.</p>
+  <p>Not yet complete.</p>
   
 </div>
 
