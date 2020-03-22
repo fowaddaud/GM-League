@@ -2,7 +2,7 @@
 <html>
 <head>
    <title></title>   
-   <link rel = "shortcut icon" type = "image/png" href = "GVO.png">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -564,7 +564,7 @@ table td, table th {
       <th>23/24</th>
     </tr>
     <tr>
-      <td>James Harden</td>
+      <td><a href="#TOR_rotation">James Harden</a></td>
       <th>00</th>
       <th>SG</th>
       <td>$27,093,018</td>
@@ -574,7 +574,7 @@ table td, table th {
       <td> </td>
     </tr>
     <tr>
-      <td>Not Booker</td>
+      <td><a href="#TOR_rotation" onclick="openItem(event,'Rotation')">Not Booker</a></td>
       <th>00</th>
       <th>SG</th>
       <td>$11,592,857</td>
@@ -815,6 +815,7 @@ table td, table th {
   </table>
      </div>
      <div id="Rotation" class="stabcontent">
+       <a name="#TOR_rotation"></a>
        <h3> Rotation </h3>
      </div>
      
@@ -862,16 +863,37 @@ function openItem(evt, cityName) {
 document.getElementById("sdefaultOpen").click();
 </script>
 
+<script>
+function openItem2(evt, cityName) {
+  var i, stabcontent, tablink2;
+  stabcontent = document.getElementsByClassName("stabcontent");
+  for (i = 0; i < stabcontent.length; i++) {
+    stabcontent[i].style.display = "none";
+  }
+  tablink2 = document.getElementsByClassName("tablink2");
+  for (i = 0; i < tablink2.length; i++) {
+    tablink2[i].className = tablink2[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="sdefaultOpen" and click on it
+document.getElementById("sdefaultOpen").click();
+</script>
+
 </div>
 </div>
 
 <div id="Transaction_History" class="tabcontent">
   <h2>Transactions</h2>
+  <a href="#Submit_Transaction" onclick="openPage('Submit_Transaction', this)">Submit a Transaction!</a>
   <p>Feb 1st 2020: Toronto Raptors trade Pascal Siakam and OG Anunoby to the Indiana  Pacers for Victor Oladipo</p>
   <p>Feb 1st 2020: Sacramento Kings trade Marvin Bagley to the Houston Rockets for Clint Capela</p>
 </div>
 
 <div id="Submit_Transaction" class="tabcontent">
+  <a name="#Submit_Transaction"></a>
   <h2>Submit a Transaction</h2>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_tCmyvvWFdNgjgQrzo14kUfdkM0lNScFiR1n_Y5GVGVp4pg/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
