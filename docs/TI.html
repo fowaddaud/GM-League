@@ -2,7 +2,7 @@
 <html>
 <head>
    <title></title>
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   <link rel = "shortcut icon" type = "image/png" href = "GVO.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -63,6 +63,8 @@ color: blue
   width: 100%
   border: 1px solid #ccc;
   outline: none;
+  overflow:auto;
+  white-space:nowrap;
 }
 
 table {
@@ -117,6 +119,16 @@ table td2, table th2 {
 }
 
 .stabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.phitabcontent {
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
@@ -302,22 +314,22 @@ table td2, table th2 {
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
   <p>Home is where the heart is..</p>
-  <img src="GVO.png" alt="GVO" width="500" height="333">
+  <img src="/Users/fowaddaud/Desktop/GVO.png" alt="GVO" width="500" height="333">
 </div>
 
 <div id="Teams" class="tabcontent">
   <h2>Teams</h2>
   <div class="tab">
 <div class="scrollmenu">
-  <button class="tablinks" onclick="openCity(event, 'Philadelphia 76ers')" id="vdefaultOpen"><a>Philadelphia 76ers</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Milwaukee Bucks')"><a>Milwaukee Bucks</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Chicago Bulls')"><a>Chicago Bulls</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Cleveland Cavaliers')"><a>Cleveland Cavaliers</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Boston Celtics')"><a>Boston Celtics</a></button> 
-  <button class="tablinks" onclick="openCity(event, 'Atlanta Hawks')"><a>Atlanta Hawks</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Philadelphia_76ers')" id="vdefaultOpen"><a>Philadelphia 76ers</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Milwaukee_Bucks')"><a>Milwaukee Bucks</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Chicago_Bulls')"><a>Chicago Bulls</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Cleveland_Cavaliers')"><a>Cleveland Cavaliers</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Boston_Celtics')"><a>Boston Celtics</a></button> 
+  <button class="tablinks" onclick="openCity(event, 'Atlanta_Hawks')"><a>Atlanta Hawks</a></button>
   <button class="tablinks" onclick="openCity(event, 'Utah Jazz')"><a>Utah Jazz</a></button>
   <button class="tablinks" onclick="openCity(event, 'Sacramento Kings')"><a>Sacramento Kings</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Toronto Raptors')"><a>Toronto Raptors</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Toronto_Raptors')"><a>Toronto Raptors</a></button>
   <button class="tablinks" onclick="openCity(event, 'Phoenix Suns')"><a>Phoenix Suns</a></button> 
   <button class="tablinks" onclick="openCity(event, 'Portland Trail Blazers')"><a>Portland Trail Blazers</a></button>
   <button class="tablinks" onclick="openCity(event, 'Washington Wizards')"><a>Washington Wizards</a></button>
@@ -600,7 +612,7 @@ table td2, table th2 {
   </table>
      </div>
      <div id="PHX_Rotation" class="ztabcontent">
-       <a name="#TOR_rotation"></a>
+       <a name="#PHX_rotation"></a>
        <h3> Rotation </h3>
      </div>
      
@@ -624,7 +636,7 @@ table td2, table th2 {
   <p>D.C. of Washington</p> 
 </div>
 
-<div id="Atlanta Hawks" class="vtabcontent">
+<div id="Atlanta_Hawks" class="vtabcontent">
   <h3>Atlanta Hawks</h3>
   <p>Georgia. ATL.</p> 
 </div>
@@ -638,7 +650,7 @@ table td2, table th2 {
   <h3>Sacramento Kings</h3>
 </div>
 
-<div id="Toronto Raptors" class="vtabcontent">
+<div id="Toronto_Raptors" class="vtabcontent">
   <h3>Toronto Raptors</h3>
   <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
 <div class="scrollmenu2">
@@ -822,6 +834,11 @@ table td2, table th2 {
       <td>Sum</td>
     </tr>
   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td style="color:green;">Player Option</td>
+	  <tr></tr><td><i>Non-Guaranteed<i></td>
+	</table>
         <table style="display:inline-block;float:right;text-align:left;">
 	  <th>Payroll:</th><td></td>
 	  <tr></tr><th>Dead Money:</th><td></td>
@@ -1015,7 +1032,393 @@ table td2, table th2 {
        <h3>Extra Cap Stuff</h3>
        <p>Cap Holds, Exceptions, and Dead Money will go here</p>
      </div>
+    </div>
+
+<div id="Philadelphia_76ers" class="vtabcontent">
+  <h3>Philadelphia 76ers</h3>
+  <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
+  <div class="scrollmenu2">
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Roster','phitabcontent')" id="phidefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Draft Assets','phitabcontent')"><b>Draft Assets</b></button>
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Rotation','phitabcontent')"><b>Rotation</b></button>
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Cap Holds','phitabcontent')"><b>Cap Holds</b></button>
 </div>
+   <div id="PHI_Roster" class="phitabcontent">
+       <a name="#PHI_Roster"></a>
+       <h3>Roster</h3>
+	<table class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>James Harden</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$27,093,018</td>
+      <td> idk </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$11,592,857</td>
+      <td class = "greentext"> $12,178,571</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rodney Hood</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>money</td>
+      <td>more money</td>
+      <td>dolla dolla bills</td>
+      <td class = "bluetext"> $7,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$6,392,760</td>
+      <td>$8,099,627</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Buddy Hield</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$4,861,208</td>
+      <td>$26,000,000</td>
+      <td>$27,000,000</td>
+      <td>$29,000,000</td>
+      <td>$31,000,000</td>
+    </tr>
+    <tr>
+      <td>Bobby Portis</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$5,250,000</td>
+      <td>$5,000,000</td>
+      <td>$4,750,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Zach Collins</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$4,240,200</td>
+      <td>$5,406,255</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Harry Giles</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,578,800</td>
+      <td>$3,976,510</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kevin Knox</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$4,380,120</td>
+      <td>$4,588,680</td>
+      <td>$5,845,978</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Seth Curry</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,171,529</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,676,700</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$897,158</td>
+      <td>$942,015</td>
+      <td>$989,116</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,911,600</td>
+      <td>$2,002,800</td>
+      <td>$3,615,054</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,416,852</td>
+      <td>$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sum</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>SUM</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+      <td>Sum</td>
+    </tr>
+  </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td style="color:green;">Player Option</td>
+	  <tr></tr><td><i>Non-Guaranteed<i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td></td>
+	  <tr></tr><th>Dead Money:</th><td></td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td></td>
+	  <tr></tr><th>Apron:</th><td></td>
+	  <tr></tr><th>Below Cap:</th><td></td>
+	  <tr></tr><th>Below Tax:</th><td></td>
+	  <tr></tr><th>Below Apron:</th><td></td>
+	</table>
+     </div>
+
+
+     <div id="PHI_Draft_Assets" class="phitabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="PHI_Rotation" class="phitabcontent">
+       <a name="#PHI_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="PHI_Extra_Cap_Stuff" class="phitabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+
+</div>
+
 
 
 <script>
@@ -1112,7 +1515,7 @@ document.getElementById("pdefaultOpen").click();
 
 <div id="Standings" class="tabcontent">
   <h2>Standings</h2>
-  <table style="display: inline-block;float:left;border: 2px ridge blue;">
+  <table style="display: inline-block;float:left;border: 2px ridge blue;overflow:auto;white-space:nowrap;">
     <tr>
       <th></th>
       <th style="width:180px;">Team</th>
@@ -1372,6 +1775,9 @@ document.getElementById("pdefaultOpen").click();
 </script>
 <script>
 document.getElementById("kdefaultOpen").click();
+</script>
+<script>
+document.getElementById("phidefaultOpen").click();
 </script>
 
 </body>
