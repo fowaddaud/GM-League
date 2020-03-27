@@ -63,8 +63,6 @@ color: blue
   width: 100%
   border: 1px solid #ccc;
   outline: none;
-  overflow:auto;
-  white-space:nowrap;
 }
 
 table {
@@ -129,6 +127,26 @@ table td2, table th2 {
 }
 
 .phitabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.miltabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.chitabcontent {
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
@@ -331,7 +349,7 @@ table td2, table th2 {
   <button class="tablinks" onclick="openCity(event, 'Sacramento Kings')"><a>Sacramento Kings</a></button>
   <button class="tablinks" onclick="openCity(event, 'Toronto_Raptors')"><a>Toronto Raptors</a></button>
   <button class="tablinks" onclick="openCity(event, 'Phoenix Suns')"><a>Phoenix Suns</a></button> 
-  <button class="tablinks" onclick="openCity(event, 'Portland Trail Blazers')"><a>Portland Trail Blazers</a></button>
+  <button class="tablinks" onclick="openCity(event, 'Portland_Trail_Blazers')"><a>Portland Trail Blazers</a></button>
   <button class="tablinks" onclick="openCity(event, 'Washington Wizards')"><a>Washington Wizards</a></button>
   
 </div>
@@ -342,10 +360,10 @@ table td2, table th2 {
 <div id="Phoenix Suns" class="vtabcontent">
   <h3>Phoenix Suns</h3>
   <div class="scrollmenu2">
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Roster','ztabcontent')" id="kdefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Draft Assets','ztabcontent')"><b>Draft Assets</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Roster','ztabcontent')" id="phxdefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Draft_Assets','ztabcontent')"><b>Draft Assets</b></button>
   <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Rotation','ztabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Cap Holds','ztabcontent')"><b>Cap Holds</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Cap_Holds','ztabcontent')"><b>Cap Holds</b></button>
 </div>
     <div id="PHX_Roster" class="ztabcontent">
        <h3>Roster</h3>
@@ -522,7 +540,7 @@ table td2, table th2 {
     </tr>
   </table>
      </div>
-     <div id="PHX_Draft Assets" class="ztabcontent">
+     <div id="PHX_Draft_Assets" class="ztabcontent">
        <h3>Draft Picks</h3>
 	<table class="w3-table-all">
     <tr>
@@ -616,12 +634,406 @@ table td2, table th2 {
        <h3> Rotation </h3>
      </div>
      
-     <div id="PHX_Cap Holds" class="ztabcontent">
+     <div id="PHX_Cap_Holds" class="ztabcontent">
        <h3> Cap Holds </h3>
      </div>
   </div>
 
-<div id="Portland Trail Blazers" class="vtabcontent">
+
+
+
+<div id="Milwaukee_Bucks" class="vtabcontent">
+        <h3>Milwaukee Bucks</h3>
+  <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Roster','miltabcontent')" id="mildefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Draft_Assets','miltabcontent')"><b>Draft Assets</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Rotation','miltabcontent')"><b>Rotation</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Extra_Cap_Stuff','miltabcontent')"><b>Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Transactions','miltabcontent')"><b>Transactions</b></button>
+</div>
+     <div id="MIL_Roster" class="miltabcontent">
+       <a name="#MIL_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table3" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Marc Gasol</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$25,595,700</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Brook Lopez</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$23,271,605</td>
+      <td>$20,728,395</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Victor Oladipo</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$21,000,000</td>
+      <td>$21,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Marvin Williams</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$15,006,250</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Norman Powell</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$10,116,576</td>
+      <td>$10,865,952</td>
+      <td class = "greentext">$11,615,328</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fred VanVleet</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$9,346,153</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trey Lyles</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,711,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Miles Bridges</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$3,755,400</td>
+      <td>$3,934,320</td>
+      <td class="bluetext">$5,421,493</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Bryn Forbes</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,875,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gerald Green</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,564,753</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dejounte Murray</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$2,321,735</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Derrick Jones Jr.</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,645,357</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kyle O'Quinn</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mario Hezonja</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="milsum20"> </td>
+      <td style="color: black;" id="milsum21"> </td>
+      <td style="color: black;" id="milsum22"> </td>
+      <td style="color: black;" id="milsum23"> </td>
+      <td style="color: black;" id="milsum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="greentext">Player Option</td>
+	  <tr></tr><td><i>Non-Guaranteed</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td></td>
+	  <tr></tr><th>Dead Money:</th><td></td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
+	  <tr></tr><th>Below Cap:</th><td></td>
+	  <tr></tr><th>Below Tax:</th><td></td>
+	  <tr></tr><th>Below Apron:</th><td></td>
+	</table>
+     </div>
+
+     <div id="MIL_Draft_Assets" class="miltabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="MIL_Rotation" class="miltabcontent">
+       <a name="#MIL_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="MIL_Extra_Cap_Stuff" class="miltabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="MIL_Transactions" class="miltabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+<div id="Portland_Trail_Blazers" class="vtabcontent">
   <h3>Portland Trail Blazers</h3>
   <p>Paris is the capital of France.</p> 
 </div>
@@ -646,23 +1058,35 @@ table td2, table th2 {
   <p>Will the Jays win a championship?</p> 
 </div>
 
+
+
+
+
+
 <div id="Sacramento Kings" class="vtabcontent">
   <h3>Sacramento Kings</h3>
+  <p><a href="#" onclick="openPage2('Players','James_Harden')"><a><p>
 </div>
+
+
+
+
+
 
 <div id="Toronto_Raptors" class="vtabcontent">
   <h3>Toronto Raptors</h3>
   <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
 <div class="scrollmenu2">
-  <button class="tablink2" onclick="openItem(event, 'TOR_Roster','stabcontent')" id="sdefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" onclick="openItem(event, 'TOR_Roster','stabcontent')" id="tordefaultOpen"><b>Roster</b></button>
   <button class="tablink2" onclick="openItem(event, 'TOR_Draft_Assets','stabcontent')"><b>Draft Assets</b></button>
   <button class="tablink2" onclick="openItem(event, 'TOR_Rotation','stabcontent')"><b>Rotation</b></button>
   <button class="tablink2" onclick="openItem(event, 'TOR_Extra_Cap_Stuff','stabcontent')"><b>Extra Cap Stuff</b></button>
+  <button class="tablink2" onclick="openItem(event, 'TOR_Transactions','stabcontent')"><b>Transactions</b></button>
 </div>
      <div id="TOR_Roster" class="stabcontent">
        <a name="#TOR_Roster"></a>
        <h3>Roster</h3>
-	<table class="w3-table-all" style="display:inline-block;float:left">
+	<table id="table" class="w3-table-all" style="display:inline-block;float:left">
     <tr>
       <th>Name</th>
       <th>2K Rating</th>
@@ -674,183 +1098,182 @@ table td2, table th2 {
       <th>23/24</th>
     </tr>
     <tr>
-      <td><a href="#" onclick="openPage2('Players','James_Harden')">James Harden</a></td>
+      <td>Marc Gasol</td>
       <td>00</td>
-      <td>SG</td>
-      <td>$27,093,018</td>
-      <td> idk </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a href="#" onclick="openPage2('Players','Donovan_Mitchell')">Donovan Mitchell</a></td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$11,592,857</td>
-      <td class = "greentext"> $12,178,571</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><a onclick="openItem3(event, 'James_Harden')">Rodney Hood</a></td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$10,000,000</td>
-      <td>$10,000,000</td>
-      <td>$10,000,000</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Trey Lyles?</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>money</td>
-      <td>more money</td>
-      <td>dolla dolla bills</td>
-      <td class = "bluetext"> $7,000,000</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>De'Aaron Fox</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$6,392,760</td>
-      <td>$8,099,627</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Buddy Hield</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,861,208</td>
-      <td>$26,000,000</td>
-      <td>$27,000,000</td>
-      <td>$29,000,000</td>
-      <td>$31,000,000</td>
-    </tr>
-    <tr>
-      <td>Bobby Portis</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$5,250,000</td>
-      <td>$5,000,000</td>
-      <td>$4,750,000</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Zach Collins</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,240,200</td>
-      <td>$5,406,255</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Harry Giles</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,578,800</td>
-      <td>$3,976,510</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Kevin Knox</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,380,120</td>
-      <td>$4,588,680</td>
-      <td>$5,845,978</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Seth Curry</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,171,529</td>
+      <td>C</td>
+      <td>$25,595,700</td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Patrick McCaw</td>
+      <td>Brook Lopez</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$23,271,605</td>
+      <td>$20,728,395</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Victor Oladipo</td>
       <td>00</td>
       <td>SG</td>
-      <td>$1,676,700</td>
+      <td>$21,000,000</td>
+      <td>$21,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Marvin Williams</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$15,006,250</td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Shamorie Ponds</td>
+      <td>Norman Powell</td>
       <td>00</td>
       <td>SG</td>
-      <td>$897,158</td>
-      <td>$942,015</td>
-      <td>$989,116</td>
+      <td>$10,116,576</td>
+      <td>$10,865,952</td>
+      <td class = "greentext">$11,615,328</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Dzazan Musa</td>
+      <td>Fred VanVleet</td>
       <td>00</td>
-      <td>SG</td>
-      <td>$1,911,600</td>
-      <td>$2,002,800</td>
-      <td>$3,615,054</td>
+      <td>PG</td>
+      <td>$9,346,153</td>
       <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Gary Trent Jr</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$1,416,852</td>
-      <td>$1,663,861</td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Sum</td>
+      <td>Trey Lyles</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,711,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Miles Bridges</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$3,755,400</td>
+      <td>$3,934,320</td>
+      <td class="bluetext">$5,421,493</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Bryn Forbes</td>
       <td>00</td>
       <td>SG</td>
-      <td>SUM</td>
-      <td>Sum</td>
-      <td>Sum</td>
-      <td>Sum</td>
-      <td>Sum</td>
+      <td>$2,875,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
-  </table>
+    <tr>
+      <td>Gerald Green</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,564,753</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dejounte Murray</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$2,321,735</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Derrick Jones Jr.</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,645,357</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kyle O'Quinn</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mario Hezonja</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="torsum20"> </td>
+      <td style="color: black;" id="torsum21"> </td>
+      <td style="color: black;" id="torsum22"> </td>
+      <td style="color: black;" id="torsum23"> </td>
+      <td style="color: black;" id="torsum24"> </td>
+    </tr>
+   </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td style="color:green;">Player Option</td>
+	  <tr></tr><td class="greentext">Player Option</td>
 	  <tr></tr><td><i>Non-Guaranteed</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
-	  <th>Payroll:</th><td></td>
-	  <tr></tr><th>Dead Money:</th><td></td>
+	  <th>Payroll:</th><td>$126,450,657</td>
+	  <tr></tr><th>Dead Money:</th><td>$1,125,000</td>
 	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td></td>
-	  <tr></tr><th>Apron:</th><td></td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
 	  <tr></tr><th>Below Cap:</th><td></td>
 	  <tr></tr><th>Below Tax:</th><td></td>
 	  <tr></tr><th>Below Apron:</th><td></td>
 	</table>
      </div>
-
 
      <div id="TOR_Draft_Assets" class="stabcontent">
        <h3>Draft Picks</h3>
@@ -1032,21 +1455,30 @@ table td2, table th2 {
        <h3>Extra Cap Stuff</h3>
        <p>Cap Holds, Exceptions, and Dead Money will go here</p>
      </div>
+     <div id="TOR_Transactions" class="stabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
     </div>
+
+
+
+
 
 <div id="Philadelphia_76ers" class="vtabcontent">
   <h3>Philadelphia 76ers</h3>
   <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
-  <div class="scrollmenu2">
+<div class="scrollmenu2">
   <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Roster','phitabcontent')" id="phidefaultOpen"><b>Roster</b></button>
   <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Draft_Assets','phitabcontent')"><b>Draft Assets</b></button>
   <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Rotation','phitabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Extra_Cap_Stuff','phitabcontent')"><b>Cap Holds</b></button>
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Extra_Cap_Stuff','phitabcontent')"><b>Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Transactions','phitabcontent')"><b>Transactions</b></button>
 </div>
-   <div id="PHI_Roster" class="phitabcontent">
+     <div id="PHI_Roster" class="phitabcontent">
        <a name="#PHI_Roster"></a>
        <h3>Roster</h3>
-	<table class="w3-table-all" style="display:inline-block;float:left">
+	<table id="table2" class="w3-table-all" style="display:inline-block;float:left">
     <tr>
       <th>Name</th>
       <th>2K Rating</th>
@@ -1058,183 +1490,182 @@ table td2, table th2 {
       <th>23/24</th>
     </tr>
     <tr>
-      <td>James Harden</td>
+      <td>Kawhi Leonard</td>
       <td>00</td>
-      <td>SG</td>
-      <td>$27,093,018</td>
-      <td> idk </td>
-      <td> </td>
-      <td> </td>
+      <td>SF</td>
+      <td>$32,700,000</td>
+      <td>$34,335,000</td>
+      <td>$36,051,750</td>
+      <td class="greentext">$37,854,338</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Donovan Mitchell</td>
+      <td>Tobias Harris</td>
       <td>00</td>
-      <td>SG</td>
-      <td>$11,592,857</td>
-      <td class = "greentext"> $12,178,571</td>
-      <td> </td>
-      <td> </td>
+      <td>PF</td>
+      <td>$30,000,000</td>
+      <td>$32,400,000</td>
+      <td>$34,992,000</td>
+      <td>$37,791,360</td>
+      <td class="greentext">$40,814,669</td>
+    </tr>
+    <tr>
+      <td>Joel Embiid</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$27,504,630</td>
+      <td>$29,542,010</td>
+      <td>$31,579,390</td>
+      <td>$33,616,770</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Rodney Hood</td>
+      <td>Danny Green</td>
       <td>00</td>
       <td>SG</td>
-      <td>$10,000,000</td>
-      <td>$10,000,000</td>
-      <td>$10,000,000</td>
-      <td> </td>
+      <td>$11,273,092</td>
+      <td>$11,836,747</td>
+      <td>$12,428,584</td>
+      <td class="greentext">$13,050,013</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Trey Lyles?</td>
+      <td>Ben Simmons</td>
       <td>00</td>
-      <td>SG</td>
-      <td>money</td>
-      <td>more money</td>
-      <td>dolla dolla bills</td>
-      <td class = "bluetext"> $7,000,000</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>De'Aaron Fox</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$6,392,760</td>
-      <td>$8,099,627</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Buddy Hield</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,861,208</td>
-      <td>$26,000,000</td>
-      <td>$27,000,000</td>
-      <td>$29,000,000</td>
-      <td>$31,000,000</td>
-    </tr>
-    <tr>
-      <td>Bobby Portis</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$5,250,000</td>
-      <td>$5,000,000</td>
-      <td>$4,750,000</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Zach Collins</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,240,200</td>
-      <td>$5,406,255</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Harry Giles</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,578,800</td>
-      <td>$3,976,510</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Kevin Knox</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$4,380,120</td>
-      <td>$4,588,680</td>
-      <td>$5,845,978</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Seth Curry</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,171,529</td>
+      <td>PG</td>
+      <td>$8,113,930</td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Patrick McCaw</td>
+      <td>JJ Redick</td>
       <td>00</td>
       <td>SG</td>
-      <td>$1,676,700</td>
+      <td>$4,760,000</td>
       <td> </td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Shamorie Ponds</td>
+      <td>Zhaire Smith</td>
       <td>00</td>
       <td>SG</td>
-      <td>$897,158</td>
-      <td>$942,015</td>
-      <td>$989,116</td>
+      <td>$3,058,800</td>
+      <td>$3,204,600</td>
+      <td style="color:blue;">$4,915,856</td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Dzazan Musa</td>
+      <td>Derrick Rose</td>
       <td>00</td>
-      <td>SG</td>
-      <td>$1,911,600</td>
-      <td>$2,002,800</td>
-      <td>$3,615,054</td>
+      <td>PG</td>
+      <td>$1,620,564</td>
       <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Gary Trent Jr</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$1,416,852</td>
-      <td>$1,663,861</td>
       <td> </td>
       <td> </td>
       <td> </td>
     </tr>
     <tr>
-      <td>Sum</td>
+      <td>Kenneth Faried</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>James Ennis</td>
       <td>00</td>
       <td>SG</td>
-      <td>SUM</td>
-      <td>Sum</td>
-      <td>Sum</td>
-      <td>Sum</td>
-      <td>Sum</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
     </tr>
-  </table>
+    <tr>
+      <td>Markieff Morris</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Boban Marjanovic</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Yogi Ferrell</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Talen Horton-Tucker</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$898,310</td>
+      <td>$1,517,981</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="phisum20"> </td>
+      <td style="color: black;" id="phisum21"> </td>
+      <td style="color: black;" id="phisum22"> </td>
+      <td style="color: black;" id="phisum23"> </td>
+      <td style="color: black;" id="phisum24"> </td>
+    </tr>
+   </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td style="color:green;">Player Option</td>
-	  <tr></tr><td><i>Non-Guaranteed<i></td>
+	  <tr></tr><td class="greentext">Player Option</td>
+	  <tr></tr><td><i>Non-Guaranteed</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
-	  <th>Payroll:</th><td></td>
-	  <tr></tr><th>Dead Money:</th><td></td>
+	  <th>Payroll:</th><td>$128,032,146</td>
+	  <tr></tr><th>Dead Money:</th><td>$0</td>
 	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td></td>
-	  <tr></tr><th>Apron:</th><td></td>
-	  <tr></tr><th>Below Cap:</th><td></td>
-	  <tr></tr><th>Below Tax:</th><td></td>
-	  <tr></tr><th>Below Apron:</th><td></td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-19,032,146</td>
+	  <tr></tr><th>Below Tax:</th><td>$3,967,854</td>
+	  <tr></tr><th>Below Apron:</th><td>$9,967,854</td>
 	</table>
      </div>
-
 
      <div id="PHI_Draft_Assets" class="phitabcontent">
        <h3>Draft Picks</h3>
@@ -1416,86 +1847,13 @@ table td2, table th2 {
        <h3>Extra Cap Stuff</h3>
        <p>Cap Holds, Exceptions, and Dead Money will go here</p>
      </div>
+     <div id="PHI_Transactions" class="phitabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
 
-</div>
-
-
-
-<script>
-function openCity(evt, cityName) {
-  var i, vtabcontent, tablinks;
-  vtabcontent = document.getElementsByClassName("vtabcontent");
-  for (i = 0; i < vtabcontent.length; i++) {
-    vtabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="vdefaultOpen" and click on it
-document.getElementById("vdefaultOpen").click();
-</script>
-
-<script>
-function openItem(evt, cityName, tc) {
-  var i, stabcontent, tablinks;
-  stabcontent = document.getElementsByClassName(tc);
-  for (i = 0; i < stabcontent.length; i++) {
-    stabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink2");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="sdefaultOpen" and click on it
-document.getElementById("sdefaultOpen").click();
-</script>
-
-<script>
-function openItem2(evt, cityName) {
-  var i, stabcontent, tablinks;
-  stabcontent = document.getElementsByClassName("PHX");
-  for (i = 0; i < stabcontent.length; i++) {
-    stabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink2");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="zdefaultOpen" and click on it
-document.getElementById("zdefaultOpen").click();
-</script>
-
-<script>
-function openItem3(evt, cityName) {
-  var i, ptabcontent, tablinks;
-  ptabcontent = document.getElementsByClassName("ptabcontent");
-  for (i = 0; i < ptabcontent.length; i++) {
-    ptabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="pdefaultOpen" and click on it
-document.getElementById("pdefaultOpen").click();
-</script>
+<script src="Open_Functions.html"></script>
 
 </div>
 </div>
@@ -1510,6 +1868,7 @@ document.getElementById("pdefaultOpen").click();
 <div id="Submit_Transaction" class="tabcontent">
   <a name="#Submit_Transaction"></a>
   <h2>Submit a Transaction</h2>
+  <p>Transactions will be updated on your page as soon as possible</p>
   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe_tCmyvvWFdNgjgQrzo14kUfdkM0lNScFiR1n_Y5GVGVp4pg/viewform?embedded=true" width="640" height="645" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </div>
 
@@ -1769,16 +2128,10 @@ function openPage2(pageName,pg,elmnt,color) {
   document.getElementById(pageName).style.display = "block";
   elmnt.style.backgroundColor = color;
 }
+</script>
 
-// Get the element with id="pdefaultOpen" and click on it
-document.getElementById("pdefaultOpen").click();
-</script>
-<script>
-document.getElementById("kdefaultOpen").click();
-</script>
-<script>
-document.getElementById("phidefaultOpen").click();
-</script>
+<script src="defaultopen.html"></script>
+<script src="Sum.html"></script>
 
 </body>
 </html> 
