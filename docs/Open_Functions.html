@@ -1,0 +1,51 @@
+function openCity(evt, cityName) {
+  var i, vtabcontent, tablinks;
+  vtabcontent = document.getElementsByClassName("vtabcontent");
+  for (i = 0; i < vtabcontent.length; i++) {
+    vtabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="vdefaultOpen" and click on it
+document.getElementById("vdefaultOpen").click();
+
+function openItem(evt, cityName, tc) {
+  var i, stabcontent, tablinks;
+  stabcontent = document.getElementsByClassName(tc);
+  for (i = 0; i < stabcontent.length; i++) {
+    stabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink2");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="sdefaultOpen" and click on it
+document.getElementById("tordefaultOpen").click();
+
+
+function openItem3(evt, cityName) {
+  var i, ptabcontent, tablinks;
+  ptabcontent = document.getElementsByClassName("ptabcontent");
+  for (i = 0; i < ptabcontent.length; i++) {
+    ptabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="pdefaultOpen" and click on it
+document.getElementById("pdefaultOpen").click();
