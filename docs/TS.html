@@ -30,12 +30,16 @@ body, html {
   width: 11.111%;
 }
 
-.greentext{
+.POtext{
 color: #00FF00
 }
 
-.bluetext{
+.TOtext{
 color: blue
+}
+
+.NGtext{
+color:#89CFF0;
 }
 
 .tablink2 {
@@ -164,7 +168,131 @@ table td2, table th2 {
   whitespace: nowrap;
 }
 
-.ztabcontent {
+.cletabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.bostabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.lactabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.memtabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+
+.atltabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.phxtabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+
+.utatabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+
+.sactabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.nyktabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.miatabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.chotabcontent {
+  float: left;
+  padding: 0px 12px;
+  padding-bottom: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  whitespace: nowrap;
+}
+
+.laltabcontent {
   float: left;
   padding: 0px 12px;
   padding-bottom: 10px;
@@ -192,10 +320,12 @@ table td2, table th2 {
   text-decoration: none;
   white-space: nowrap;
   overflow: auto;
+  font-weight:bold;
+  font-size: 15px;
 }
 
 .scrollmenu2 b:hover {
-  background-color: #777;
+  background-color: silver;
 }
 
 
@@ -208,7 +338,7 @@ table td2, table th2 {
   width: 100%;
   height: 100%;
 }
-.scrollmenu a {
+.scrollmenu d {
   display: inline-block;
   color: white;
   text-align: center;
@@ -216,10 +346,11 @@ table td2, table th2 {
   text-decoration: none;
   overflow: auto;
   white-space: nowrap;
+  font-weight:bold;
 }
 
-.scrollmenu a:hover {
-  background-color: #777;
+.scrollmenu d:hover {
+  background-color: silver;
 }
 
 .vscrollmenu {
@@ -241,6 +372,10 @@ table td2, table th2 {
 
 .vscrollmenu c:hover {
   background-color: #777;
+}
+
+a:visited{
+  color:blue;
 }
 
 .tab {
@@ -345,6 +480,9 @@ table td2, table th2 {
 <div id="Home" class="tabcontent">
   <h2>Home</h2>
   <p>Home is where the heart is..</p>
+  <p><a onclick="openPage('Teams', this);openCity(event, 'Chicago_Bulls');">Chi</a></p>
+  <p><a onclick="openPage('Teams', this);openCity(event, 'Sacramento_Kings');">Sac</a></p>
+  <p><a onclick="openPage('Teams', this);openCity(event, 'Toronto_Raptors');">Tor</a></p>
   <img src="GVO.png" alt="GVO" width="500" height="333">
 </div>
 
@@ -352,33 +490,39 @@ table td2, table th2 {
   <h2>Teams</h2>
   <div class="tab">
 <div class="scrollmenu">
-  <button class="tablinks" onclick="openCity(event, 'Philadelphia_76ers')" id="vdefaultOpen"><a>Philadelphia 76ers</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Milwaukee_Bucks')"><a>Milwaukee Bucks</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Chicago_Bulls')"><a>Chicago Bulls</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Cleveland_Cavaliers')"><a>Cleveland Cavaliers</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Boston_Celtics')"><a>Boston Celtics</a></button> 
-  <button class="tablinks" onclick="openCity(event, 'Atlanta_Hawks')"><a>Atlanta Hawks</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Utah Jazz')"><a>Utah Jazz</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Sacramento Kings')"><a>Sacramento Kings</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Toronto_Raptors')"><a>Toronto Raptors</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Phoenix Suns')"><a>Phoenix Suns</a></button> 
-  <button class="tablinks" onclick="openCity(event, 'Portland_Trail_Blazers')"><a>Portland Trail Blazers</a></button>
-  <button class="tablinks" onclick="openCity(event, 'Washington Wizards')"><a>Washington Wizards</a></button>
+  <button class="tablinks" style="background-color:#006BB6;" onclick="openCity(event, 'Philadelphia_76ers')" id="vdefaultOpen"><d style="color:#ED1746;">Philadelphia 76ers</d></button>
+  <button class="tablinks" style="background-color:#00471B;" onclick="openCity(event, 'Milwaukee_Bucks')"><d style="color:#EEE1C6;">Milwaukee Bucks</d></button>
+  <button class="tablinks" style="background-color:red;" onclick="openCity(event, 'Chicago_Bulls')"><d style="color:black;">Chicago Bulls</d></button>
+  <button class="tablinks" style="background-color:#B11226;" onclick="openCity(event, 'Cleveland_Cavaliers')"><d style="color:gold;">Cleveland Cavaliers</d></button>
+  <button class="tablinks" style="background-color:green;" onclick="openCity(event, 'Boston_Celtics')"><d>Boston Celtics</d></button>
+  <button class="tablinks" style="background-color:red;" onclick="openCity(event, 'Los_Angeles_Clippers')"><d style="color:blue;padding-left:5px;">Los Angeles Clippers</d></button> 
+  <button class="tablinks" style="background-color:#6189B9;" onclick="openCity(event, 'Memphis_Grizzlies')"><d style="color:#12173F;">Memphis Grizzlies</d></button> 
+  <button class="tablinks" style="background-color:#E03A3E;" onclick="openCity(event, 'Atlanta_Hawks')"><d style="color:#C1D32F;">Atlanta Hawks</d></button>
+  <button class="tablinks" style="background-color:#98002E;" onclick="openCity(event, 'Miami_Heat')"><d style="color:#F9A01B;">Miami Heat</d></button>
+  <button class="tablinks" style="background-color:teal;" onclick="openCity(event, 'Charlotte_Hornets')"><d style="color:#1D1160;">Charlotte Hornets</d></button>
+  <button class="tablinks" style="background-color:#002B5C;" onclick="openCity(event, 'Utah_Jazz')"><d style="color:#F9A01B;">Utah Jazz</d></button>
+  <button class="tablinks" style="background-color:purple;" onclick="openCity(event, 'Sacramento_Kings')"><d style="color:lightgray;">Sacramento Kings</d></button>
+  <button class="tablinks" style="background-color:#F58426;" onclick="openCity(event, 'New_York_Knicks')"><d style="color:#006BB6;">New York Knicks</d></button>
+  <button class="tablinks" style="background-color:gold;" onclick="openCity(event, 'Los_Angeles_Lakers')"><d style="color:purple;">Los Angeles Lakers</d></button>
+  <button class="tablinks" style="background-color:#CE1141;" onclick="openCity(event, 'Toronto_Raptors')"><d style="color:black">Toronto Raptors</d></button>
+  <button class="tablinks" onclick="openCity(event, 'Phoenix_Suns')"><d>Phoenix Suns</d></button> 
+  <button class="tablinks" onclick="openCity(event, 'Portland_Trail_Blazers')"><d>Portland Trail Blazers</d></button>
+  <button class="tablinks" onclick="openCity(event, 'Washington_Wizards')"><d>Washington Wizards</d></button>
   
 </div>
 
 </div>
 
 <div class="w3-container">
-<div id="Phoenix Suns" class="vtabcontent">
+<div id="Phoenix_Suns" class="vtabcontent">
   <h3>Phoenix Suns</h3>
   <div class="scrollmenu2">
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Roster','ztabcontent')" id="phxdefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Draft_Assets','ztabcontent')"><b>Draft Assets</b></button>
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Rotation','ztabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Cap_Holds','ztabcontent')"><b>Cap Holds</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Roster','phxtabcontent')" id="phxdefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Draft_Assets','phxtabcontent')"><b>Draft Assets</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Rotation','phxtabcontent')"><b>Rotation</b></button>
+  <button class="tablink2" style="background-color:orange;" onclick="openItem(event, 'PHX_Cap_Holds','phxtabcontent')"><b>Cap Holds</b></button>
 </div>
-    <div id="PHX_Roster" class="ztabcontent">
+    <div id="PHX_Roster" class="phxtabcontent">
        <h3>Roster</h3>
 	<table class="w3-table-all">
     <tr>
@@ -406,7 +550,7 @@ table td2, table th2 {
       <td>00</td>
       <td>SG</td>
       <td>$11,592,857</td>
-      <td class = "greentext"> $12,178,571</td>
+      <td class = "green"> $12,178,571</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -428,7 +572,7 @@ table td2, table th2 {
       <td>money</td>
       <td>more money</td>
       <td>dolla dolla bills</td>
-      <td class = "bluetext"> $7,000,000</td>
+      <td class = "blue"> $7,000,000</td>
       <td> </td>
     </tr>
     <tr>
@@ -553,7 +697,7 @@ table td2, table th2 {
     </tr>
   </table>
      </div>
-     <div id="PHX_Draft_Assets" class="ztabcontent">
+     <div id="PHX_Draft_Assets" class="phxtabcontent">
        <h3>Draft Picks</h3>
 	<table class="w3-table-all">
     <tr>
@@ -642,12 +786,12 @@ table td2, table th2 {
     </tr>
   </table>
      </div>
-     <div id="PHX_Rotation" class="ztabcontent">
+     <div id="PHX_Rotation" class="phxtabcontent">
        <a name="#PHX_rotation"></a>
        <h3> Rotation </h3>
      </div>
      
-     <div id="PHX_Cap_Holds" class="ztabcontent">
+     <div id="PHX_Cap_Holds" class="phxtabcontent">
        <h3> Cap Holds </h3>
      </div>
   </div>
@@ -656,14 +800,14 @@ table td2, table th2 {
 
 
 <div id="Milwaukee_Bucks" class="vtabcontent">
-        <h3>Milwaukee Bucks</h3>
+        <h3>Milwaukee Bucks (46-36)</h3>
   <p style="margin-top:-0.5em"><b>GM: Ledzeps</b></p>
 <div class="scrollmenu2">
-  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Roster','miltabcontent')" id="mildefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Draft_Assets','miltabcontent')"><b>Draft Assets</b></button>
-  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Rotation','miltabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Extra_Cap_Stuff','miltabcontent')"><b>Extra Cap Stuff</b></button>
-  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'MIL_Transactions','miltabcontent')"><b>Transactions</b></button>
+  <button class="tablink2" style="background-color:#00471B;" onclick="openItem(event, 'MIL_Roster','miltabcontent')" id="mildefaultOpen"><b style="color:#EEE1C6;">Roster</b></button>
+  <button class="tablink2" style="background-color:#00471B;" onclick="openItem(event, 'MIL_Draft_Assets','miltabcontent')"><b style="color:#EEE1C6;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#00471B;" onclick="openItem(event, 'MIL_Rotation','miltabcontent')"><b style="color:#EEE1C6">Rotation</b></button>
+  <button class="tablink2" style="background-color:#00471B;" onclick="openItem(event, 'MIL_Extra_Cap_Stuff','miltabcontent')"><b style="color:#EEE1C6;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#00471B;" onclick="openItem(event, 'MIL_Transactions','miltabcontent')"><b style="color:#EEE1C6;">Transactions</b></button>
 </div>
      <div id="MIL_Roster" class="miltabcontent">
        <a name="#MIL_Roster"></a>
@@ -685,7 +829,7 @@ table td2, table th2 {
       <td>SF</td>
       <td>$33,005,556</td>
       <td>$35,450,412</td>
-      <td class="greentext">$37,895,268</td>
+      <td class="POtext">$37,895,268</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -715,7 +859,7 @@ table td2, table th2 {
       <td>C</td>
       <td>$9,562,920</td>
       <td>$10,018,200</td>
-      <td class="bluetext">$12,632,950</td>
+      <td class="TOtext">$12,632,950</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -815,7 +959,7 @@ table td2, table th2 {
       <td>C</td>
       <td>$1,350,400</td>
       <td>$1,412,300</td>
-      <td class="bluetext">$1,532,890</td>
+      <td class="TOtext">$1,532,890</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -831,8 +975,8 @@ table td2, table th2 {
     </tr>
     <tr>
       <td><i>Vincent Poirier</i></td>
-      <td> </td>
-      <td> </td>
+      <td>00</td>
+      <td>C</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -841,8 +985,8 @@ table td2, table th2 {
     </tr>
     <tr>
       <td><i>Derrick Walton Jr</i></td>
-      <td> </td>
-      <td> </td>
+      <td>00</td>
+      <td>PG</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -862,19 +1006,19 @@ table td2, table th2 {
    </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td class="greentext">Player Option</td>
-	  <tr></tr><td style="color:#89CFF0;">Non-Guaranteed</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
 	  <tr></tr><td><i>Two-Way</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
 	  <th>Payroll:</th><td>$120,008,848</td>
 	  <tr></tr><th>Dead Money:</th><td>$1,000,000</td>
-	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
-	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
-	  <tr></tr><th>Below Cap:</th><td>$-12,008,848</td>
-	  <tr></tr><th>Below Tax:</th><td>$10,991,152</td>
-	  <tr></tr><th>Below Apron:</th><td>$16,991,152</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-11,868,848</td>
+	  <tr></tr><th>Below Tax:</th><td>$11,618,152</td>
+	  <tr></tr><th>Below Apron:</th><td>$17,919,152</td>
 	</table>
      </div>
 
@@ -1069,14 +1213,14 @@ table td2, table th2 {
 
 
 <div id="Chicago_Bulls" class="vtabcontent">
-      <h3>Chicago Bulls</h3>
+      <h3>Chicago Bulls (42-40)</h3>
   <p style="margin-top:-0.5em"><b>GM: Daydm</b></p>
 <div class="scrollmenu2">
-  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Roster','chitabcontent')" id="chidefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Draft_Assets','chitabcontent')"><b>Draft Assets</b></button>
-  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Rotation','chitabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Extra_Cap_Stuff','chitabcontent')"><b>Extra Cap Stuff</b></button>
-  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Transactions','chitabcontent')"><b>Transactions</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Roster','chitabcontent')" id="chidefaultOpen"><b style="color:black;">Roster</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Draft_Assets','chitabcontent')"><b style="color:black;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Rotation','chitabcontent')"><b style="color:black;">Rotation</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Extra_Cap_Stuff','chitabcontent')"><b style="color:black;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'CHI_Transactions','chitabcontent')"><b style="color:black;">Transactions</b></button>
 </div>
      <div id="CHI_Roster" class="chitabcontent">
        <a name="#CHI_Roster"></a>
@@ -1093,119 +1237,119 @@ table td2, table th2 {
       <th>23/24</th>
     </tr>
     <tr>
-      <td>Marc Gasol</td>
-      <td>00</td>
-      <td>C</td>
-      <td>$25,595,700</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Brook Lopez</td>
-      <td>00</td>
-      <td>C</td>
-      <td>$23,271,605</td>
-      <td>$20,728,395</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Victor Oladipo</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$21,000,000</td>
-      <td>$21,000,000</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Marvin Williams</td>
-      <td>00</td>
-      <td>PF</td>
-      <td>$15,006,250</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Norman Powell</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$10,116,576</td>
-      <td>$10,865,952</td>
-      <td class = "greentext">$11,615,328</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Fred VanVleet</td>
-      <td>00</td>
-      <td>PG</td>
-      <td>$9,346,153</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Trey Lyles</td>
-      <td>00</td>
-      <td>PF</td>
-      <td>$5,711,000</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Miles Bridges</td>
+      <td>Andrew Wiggins</td>
       <td>00</td>
       <td>SF</td>
-      <td>$3,755,400</td>
-      <td>$3,934,320</td>
-      <td class="bluetext">$5,421,493</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Bryn Forbes</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,875,000</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
+      <td>$27,504,630</td>
+      <td>$29,542,010</td>
+      <td>$31,579,390</td>
+      <td>$33,616,770</td>
       <td> </td>
     </tr>
     <tr>
-      <td>Gerald Green</td>
-      <td>00</td>
-      <td>SG</td>
-      <td>$2,564,753</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Dejounte Murray</td>
-      <td>00</td>
-      <td>PG</td>
-      <td>$2,321,735</td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>Derrick Jones Jr.</td>
+      <td>Otto Porter</td>
       <td>00</td>
       <td>SF</td>
+      <td>$27,250,575</td>
+      <td class="POtext">$28,489,238</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Goran Dragic</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$19,217,900</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Will Barton</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$12,776,786</td>
+      <td>$13,723,214</td>
+      <td class="POtext">$14,669,642</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jeremy Lin</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$6,000,000</td>
+      <td>$6,000,000</td>
+      <td class = "green">$6,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Lauri Markkanen</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,300,400</td>
+      <td>$6,731,508</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Wendell Carter Jr</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$5,201,400</td>
+      <td>$5,448,840</td>
+      <td style="color:blue;">$6,920,027</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kristaps Porzingis</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$4,485,665</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Derrick White</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,948,080</td>
+      <td>$3,516,284</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Josh Hart</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,934,160</td>
+      <td>$3,491,159</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jake Layman</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,931,189</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Christian Wood</td>
+      <td>00</td>
+      <td>PF</td>
       <td>$1,645,357</td>
       <td> </td>
       <td> </td>
@@ -1213,7 +1357,17 @@ table td2, table th2 {
       <td> </td>
     </tr>
     <tr>
-      <td>Kyle O'Quinn</td>
+      <td>Avery Bradley</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chris Boucher</td>
       <td>00</td>
       <td>C</td>
       <td>$1,620,564</td>
@@ -1223,19 +1377,29 @@ table td2, table th2 {
       <td> </td>
     </tr>
     <tr>
-      <td>Mario Hezonja</td>
+      <td>Brad Wanamaker</td>
       <td>00</td>
-      <td>SF</td>
+      <td>PG</td>
       <td>$1,620,564</td>
       <td> </td>
       <td> </td>
-      <td> </td>
-      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
     </tr>
     <tr>
-      <td style="color:gray;">|</td>
+      <td><i>Yuta Watanabe</i></td>
+      <td>00</td>
+      <td>SF</td>
       <td> </td>
       <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td><i>Miye Oni</i></td>
+      <td>00</td>
+      <td>SG</td>
       <td> </td>
       <td> </td>
       <td> </td>
@@ -1255,19 +1419,19 @@ table td2, table th2 {
    </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td class="greentext">Player Option</td>
-	  <tr></tr><td style="color:#89CFF0;">Non-Guaranteed</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
 	  <tr></tr><td><i>Two-Way</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
-	  <th>Payroll:</th><td></td>
-	  <tr></tr><th>Dead Money:</th><td></td>
-	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
-	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
-	  <tr></tr><th>Below Cap:</th><td></td>
-	  <tr></tr><th>Below Tax:</th><td></td>
-	  <tr></tr><th>Below Apron:</th><td></td>
+	  <th>Payroll:</th><td>$120,057,834</td>
+	  <tr></tr><th>Dead Money:</th><td>$0</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-10,917,834</td>
+	  <tr></tr><th>Below Tax:</th><td>$12,569,166</td>
+	  <tr></tr><th>Below Apron:</th><td>$18,870,166</td>
 	</table>
      </div>
 
@@ -1462,40 +1626,3991 @@ table td2, table th2 {
 
 
 
+<div id="Cleveland_Cavaliers" class="vtabcontent">
+    <h3>Cleveland Cavaliers (0-0)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Fuzzy</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:#B11226;" onclick="openItem(event, 'CLE_Roster','cletabcontent')" id="cledefaultOpen"><b style="color:gold;">Roster</b></button>
+  <button class="tablink2" style="background-color:#B11226;" onclick="openItem(event, 'CLE_Draft_Assets','cletabcontent')"><b style="color:gold;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#B11226;" onclick="openItem(event, 'CLE_Rotation','cletabcontent')"><b style="color:gold;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#B11226;" onclick="openItem(event, 'CLE_Extra_Cap_Stuff','cletabcontent')"><b style="color:gold;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#B11226;" onclick="openItem(event, 'CLE_Transactions','cletabcontent')"><b style="color:gold;">Transactions</b></button>
+</div>
+     <div id="CLE_Roster" class="cletabcontent">
+       <a name="#CLE_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table5" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Chris Paul</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$38,506,482</td>
+      <td>$41,358,814</td>
+      <td class="POtext">$44,211,146</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gorgui Dieng</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$16,229,213</td>
+      <td>$17,287,640</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Larry Nance Jr.</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$12,727,273</td>
+      <td>$11,709,091</td>
+      <td>$10,690,909</td>
+      <td>$9,672,727</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Andre Roberson</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$10,740,740</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kyle Anderson</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$9,073,050</td>
+      <td>$9,505,100</td>
+      <td>$9,937,150</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Emmanuel Mudiay</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$8,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Doug McDermott</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$7,333,333</td>
+      <td>$7,333,333</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Andre Hunter</td>
+      <td>00</td>
+      <td>SF</td>
+      <td> </td>
+      <td>$ </td>
+      <td class="TOtext">$7,775,400</td>
+      <td class="TOtext">$9,835,881</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Collin Sexton</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$4,764,960</td>
+      <td>$4,991,880</td>
+      <td style="color:blue;">$6,349,671</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Bol Bol</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$4,033,440</td>
+      <td>$4,235,160</td>
+      <td style="color:blue">$4,437,000</td>
+      <td class="TOtext">$5,887,899</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Cedi Osman</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$2,907,143</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ante Zizic</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$2,281,800</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Alan Williams</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jevon Carter</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,416,852</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Naz Reid</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$898,310</td>
+      <td>$1,517,981</td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="clesum20"> </td>
+      <td style="color: black;" id="clesum21"> </td>
+      <td style="color: black;" id="clesum22"> </td>
+      <td style="color: black;" id="clesum23"> </td>
+      <td style="color: black;" id="clesum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$127,601,520</td>
+	  <tr></tr><th>Dead Money:</th><td>$5,150,017</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-23,611,537</td>
+	  <tr></tr><th>Below Tax:</th><td>$-124,537</td>
+	  <tr></tr><th>Below Apron:</th><td>$6,176,463</td>
+	</table>
+     </div>
+
+     <div id="CLE_Draft_Assets" class="cletabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="CLE_Rotation" class="cletabcontent">
+       <a name="#CLE_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="CLE_Extra_Cap_Stuff" class="cletabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="CLE_Transactions" class="cletabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+
+
+<div id="Boston_Celtics" class="vtabcontent">
+     <h3>Boston Celtics (49-33)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Pokex</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'BOS_Roster','bostabcontent')" id="bosdefaultOpen"><b>Roster</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'BOS_Draft_Assets','bostabcontent')"><b>Draft Assets</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'BOS_Rotation','bostabcontent')"><b>Rotation</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'BOS_Extra_Cap_Stuff','bostabcontent')"><b>Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:green;" onclick="openItem(event, 'BOS_Transactions','bostabcontent')"><b>Transactions</b></button>
+</div>
+     <div id="BOS_Roster" class="bostabcontent">
+       <a name="#BOS_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table6" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Mike Conley</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$32,511,623</td>
+      <td>$34,502,130</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Al Horford</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$30,123,014</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Robert Covington</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$11,301,219</td>
+      <td>$12,138,345</td>
+      <td>$12,975,471</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>E'Twaun Moore</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$8,664,928</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jayson Tatum</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$7,830,000</td>
+      <td>$9,897,120</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jaylen Brown</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$6,534,829</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kris Dunn</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$5,348,007</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Daniel Theis</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$4,750,000</td>
+      <td>$4,750,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Frank Ntilikina</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$4,855,800</td>
+      <td>$6,176,578</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Isaiah Thomas</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$3,000,000</td>
+      <td class="POtext">$3,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Robert Williams</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,937,520</td>
+      <td>$2,029,920</td>
+      <td style="color:blue;">$3,661,976</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>David Nwaba</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Semi Ojeleye</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,618,520</td>
+      <td class="NGtext">$1,752,950</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Anthony Melton</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,416,852</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="bossum20"> </td>
+      <td style="color: black;" id="bossum21"> </td>
+      <td style="color: black;" id="bossum22"> </td>
+      <td style="color: black;" id="bossum23"> </td>
+      <td style="color: black;" id="bossum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$121,512,876</td>
+	  <tr></tr><th>Dead Money:</th><td>$92,857</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-12,465,733</td>
+	  <tr></tr><th>Below Tax:</th><td>$11,021,267</td>
+	  <tr></tr><th>Below Apron:</th><td>$17,322,267</td>
+	</table>
+     </div>
+
+     <div id="BOS_Draft_Assets" class="bostabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="BOS_Rotation" class="bostabcontent">
+       <a name="#BOS_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="BOS_Extra_Cap_Stuff" class="bostabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="BOS_Transactions" class="bostabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+
+
+
+<div id="Los_Angeles_Clippers" class="vtabcontent">
+  <h3>Los Angeles Clippers (0-0)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Jay</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'LAC_Roster','lactabcontent')" id="lacdefaultOpen"><b style="color:blue;">Roster</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'LAC_Draft_Assets','lactabcontent')"><b style="color:blue;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'LAC_Rotation','lactabcontent')"><b style="color:blue;">Rotation</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'LAC_Extra_Cap_Stuff','lactabcontent')"><b style="color:blue;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:red;" onclick="openItem(event, 'LAC_Transactions','lactabcontent')"><b style="color:blue;">Transactions</b></button>
+</div>
+     <div id="LAC_Roster" class="lactabcontent">
+       <a name="#LAC_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table7" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Giannis Antetokounmpo</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$25,842,697</td>
+      <td>$27,528,090</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Khris Middleton</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$25,000,000</td>
+      <td>$25,000,000</td>
+      <td>$25,000,000</td>
+      <td>$25,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tyreke Evans</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$9,618,486</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Thomas Bryant</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$8,000,000</td>
+      <td>$7,710,000</td>
+      <td>$7,350,000</td>
+      <td class="POtext">$7,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dwight Howard</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$7,618,486</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Marco Belinelli</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$5,846,154</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Thaddeus Young</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$4,760,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick Patterson</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$3,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chris Silva</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$2,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>JR Smith</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tyrone Wallace</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,588,231</td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td>Keita Bates-Diop</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,416,852</td>
+      <td class="NGtext">$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Isaac Bonga</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,416,852</td>
+      <td class="NGtext">$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gary Clark Jr</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,416,852</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kyle Guy</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$898,310</td>
+      <td>$943,225</td>
+      <td class="NGtext">$990,386</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="lacsum20"> </td>
+      <td style="color: black;" id="lacsum21"> </td>
+      <td style="color: black;" id="lacsum22"> </td>
+      <td style="color: black;" id="lacsum23"> </td>
+      <td style="color: black;" id="lacsum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$100,043,484</td>
+	  <tr></tr><th>Dead Money:</th><td>$0</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$9,096,516</td>
+	  <tr></tr><th>Below Tax:</th><td>$32,583,516</td>
+	  <tr></tr><th>Below Apron:</th><td>$38,884,516</td>
+	</table>
+     </div>
+
+     <div id="LAC_Draft_Assets" class="lactabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="LAC_Rotation" class="lactabcontent">
+       <a name="#LAC_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="LAC_Extra_Cap_Stuff" class="lactabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="LAC_Transactions" class="lactabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+<div id="Memphis_Grizzlies" class="vtabcontent">
+  <h3>Memphis Grizzlies (0-0)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Marcutio</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:#6189B9;" onclick="openItem(event, 'MEM_Roster','memtabcontent')" id="memdefaultOpen"><b style="color:#12173F;">Roster</b></button>
+  <button class="tablink2" style="background-color:#6189B9;" onclick="openItem(event, 'MEM_Draft_Assets','memtabcontent')"><b style="color:#12173F;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#6189B9;" onclick="openItem(event, 'MEM_Rotation','memtabcontent')"><b style="color:#12173F;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#6189B9;" onclick="openItem(event, 'MEM_Extra_Cap_Stuff','memtabcontent')"><b style="color:#12173F;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#6189B9;" onclick="openItem(event, 'MEM_Transactions','memtabcontent')"><b style="color:#12173F;">Transactions</b></button>
+</div>
+     <div id="MEM_Roster" class="memtabcontent">
+       <a name="#MEM_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table8" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Harrison Barnes</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$25,102,513</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gary Harris</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$17,839,286</td>
+      <td>$19,160,714</td>
+      <td>$20,482,143</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jonas Valanciunas</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$17,617,978</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jordan Clarkson</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$13,437,500</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ben McLemore</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$8,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>RJ Barrett</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$7,839,960</td>
+      <td>$8,231,760</td>
+      <td class="TO">$8,623,920</td>
+      <td class="TO">$10,900,635</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jaren Jackson Jr.</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$6,927,480</td>
+      <td>$7,257,360</td>
+      <td class="TO">$9,180,560</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dario Saric</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$3,481,986</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DJ Wilson</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$2,961,120</td>
+      <td>$4,548,280</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tacko Fall</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$2,000,000</td>
+      <td>$2,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jahlil Okafor</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,702,486</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>John Henson</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trey Burke</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Sterling Brown</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,618,520</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="memsum20"> </td>
+      <td style="color: black;" id="memsum21"> </td>
+      <td style="color: black;" id="memsum22"> </td>
+      <td style="color: black;" id="memsum23"> </td>
+      <td style="color: black;" id="memsum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$111,769,957</td>
+	  <tr></tr><th>Dead Money:</th><td>$13,218,195</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-15,848,152</td>
+	  <tr></tr><th>Below Tax:</th><td>$7,638,848</td>
+	  <tr></tr><th>Below Apron:</th><td>$13,939,848</td>
+	</table>
+     </div>
+
+     <div id="MEM_Draft_Assets" class="memtabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="MEM_Rotation" class="memtabcontent">
+       <a name="#MEM_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="MEM_Extra_Cap_Stuff" class="memtabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="MEM_Transactions" class="memtabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+<div id="Atlanta_Hawks" class="vtabcontent">
+  <h3>Atlanta Hawks (50-32)</h3>
+    <p style="margin-top:-0.5em"><b>GM: Mubz</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:#E03A3E;" onclick="openItem(event, 'ATL_Roster','atltabcontent')" id="atldefaultOpen"><b style="color:#C1D32F;">Roster</b></button>
+  <button class="tablink2" style="background-color:#E03A3E;" onclick="openItem(event, 'ATL_Draft_Assets','atltabcontent')"><b style="color:#C1D32F;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#E03A3E;" onclick="openItem(event, 'ATL_Rotation','atltabcontent')"><b style="color:#C1D32F;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#E03A3E;" onclick="openItem(event, 'ATL_Extra_Cap_Stuff','atltabcontent')"><b style="color:#C1D32F;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#E03A3E;" onclick="openItem(event, 'ATL_Transactions','atltabcontent')"><b style="color:#C1D32F;">Transactions</b></button>
+</div>
+     <div id="ATL_Roster" class="atltabcontent">
+       <a name="#ATL_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table9" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Zach Lavine</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$19,500,000</td>
+      <td>$19,500,000</td>
+      <td>$19,500,000</td>
+      <td>$19,500,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Myles Turner</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$18,000,000</td>
+      <td>$18,000,000</td>
+      <td>$18,000,000</td>
+      <td>$18,000,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Miles Plumlee</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$12,500,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick Beverley</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$8,500,000</td>
+      <td>$8,500,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ed Davis</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$7,000,000</td>
+      <td>$7,000,000</td>
+      <td class="POtext">$7,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Justin Holiday</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$6,750,000</td>
+      <td>$6,750,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trae Young</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$6,273,000</td>
+      <td>$6,571,800</td>
+      <td class="TOtext">$8,326,471</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Demarcus Cousins</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$6,200,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Taurean Prince</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$3,481,986</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>John Collins</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$2,686,560</td>
+      <td>$4,137,302</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DeAndre Bembry</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$2,603,982</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Omari Spellman</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,897,800</td>
+      <td>$1,988,280</td>
+      <td class="TOtext">$3,588,845</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Deyonta Davis</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,678,854</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Furkan Korkmaz</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jaylen Adams</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,416,852</td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="atlsum20"> </td>
+      <td style="color: black;" id="atlsum21"> </td>
+      <td style="color: black;" id="atlsum22"> </td>
+      <td style="color: black;" id="atlsum23"> </td>
+      <td style="color: black;" id="atlsum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td class="TOtext">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$100,109,598</td>
+	  <tr></tr><th>Dead Money:</th><td>$0</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$9,030,402</td>
+	  <tr></tr><th>Below Tax:</th><td>$32,517,402</td>
+	  <tr></tr><th>Below Apron:</th><td>$38,818,402</td>
+	</table>
+     </div>
+
+     <div id="ATL_Draft_Assets" class="atltabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="ATL_Rotation" class="atltabcontent">
+       <a name="#ATL_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="ATL_Extra_Cap_Stuff" class="atltabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="ATL_Transactions" class="atltabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+<div id="Utah_Jazz" class="vtabcontent">
+  <h3>Utah Jazz (51-31)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Ducks</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:#002B5C;" onclick="openItem(event, 'UTA_Roster','utatabcontent')" id="utadefaultOpen"><b style="color:#F9A01B;">Roster</b></button>
+  <button class="tablink2" style="background-color:#002B5C;" onclick="openItem(event, 'UTA_Draft_Assets','utatabcontent')"><b style="color:#F9A01B;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#002B5C;" onclick="openItem(event, 'UTA_Rotation','utatabcontent')"><b style="color:#F9A01B;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#002B5C;" onclick="openItem(event, 'UTA_Extra_Cap_Stuff','utatabcontent')"><b style="color:#F9A01B;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#002B5C;" onclick="openItem(event, 'UTA_Transactions','utatabcontent')"><b style="color:#F9A01B;">Transactions</b></button>
+</div>
+     <div id="UTA_Roster" class="utatabcontent">
+       <a name="#UTA_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table10" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Russell Westbrook</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$38,178,000</td>
+      <td>$41,006,000</td>
+      <td>$43,848,000</td>
+      <td class="POtext">$46,662,000</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Danilo Gallinari</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$22,615,559</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>JaVale McGee</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$10,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jabari Parker</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$9,854,062</td>
+      <td>$10,346,765</td>
+      <td>$10,864,103</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Alex Len</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$4,160,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Willie Cauley-Stein</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$4,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$3,635,760</td>
+      <td>$5,195,501</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Juan Hernangomez</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$3,321,030</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Justin Jackson</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$3,280,920</td>
+      <td>$5,029,650</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Grayson Allen</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,429,400</td>
+      <td>$2,545,320</td>
+      <td class="TOtext">$4,054,695</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ty Jerome</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$2,105,520</td>
+      <td>$2,210,640</td>
+      <td class="TOtext">$2,316,240</td>
+      <td class="TOtext">$4,171,548</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Wes Matthews</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Corey Brewer</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Caleb Swanigan</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jonas Jerebko</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="utasum20"> </td>
+      <td style="color: black;" id="utasum21"> </td>
+      <td style="color: black;" id="utasum22"> </td>
+      <td style="color: black;" id="utasum23"> </td>
+      <td style="color: black;" id="utasum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td></td>
+	  <tr></tr><th>Dead Money:</th><td></td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td></td>
+	  <tr></tr><th>Below Tax:</th><td></td>
+	  <tr></tr><th>Below Apron:</th><td></td>
+	</table>
+     </div>
+
+     <div id="UTA_Draft_Assets" class="utatabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="UTA_Rotation" class="utatabcontent">
+       <a name="#UTA_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="UTA_Extra_Cap_Stuff" class="utatabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="UTA_Transactions" class="utatabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+<div id="Miami_Heat" class="vtabcontent">
+  <h3>Miami Heat (44-38)</h3>
+    <p style="margin-top:-0.5em"><b>GM: Heatles</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:#91BFE1;" onclick="openItem(event, 'MIA_Roster','miatabcontent')" id="miadefaultOpen"><b style="color:#FF00FF;">Roster</b></button>
+  <button class="tablink2" style="background-color:#91BFE1;" onclick="openItem(event, 'MIA_Draft_Assets','miatabcontent')"><b style="color:#FF00FF;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#91BFE1;" onclick="openItem(event, 'MIA_Rotation','miatabcontent')"><b style="color:#FF00FF;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#91BFE1;" onclick="openItem(event, 'MIA_Extra_Cap_Stuff','miatabcontent')"><b style="color:#FF00FF;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#91BFE1;" onclick="openItem(event, 'MIA_Transactions','miatabcontent')"><b style="color:#FF00FF;">Transactions</b></button>
+</div>
+     <div id="MIA_Roster" class="miatabcontent">
+       <a name="#MIA_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table12" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Tyler Johnson</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$19,245,370</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Brandon Goodwin</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$14,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Justise Winslow</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$13,000,000</td>
+      <td>$13,000,000</td>
+      <td class="TOtext">$13,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Coby White</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$4,417,000</td>
+      <td>$4,643,900</td>
+      <td class="TOtext">$4,864,800</td>
+      <td class="TOtext">$6,178,296</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Shai Gilgeous-Alexander</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$3,952,920</td>
+      <td>$4,141,320</td>
+      <td class = "TOtext">$5,495,532</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Bam Adebayo</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$3,454,080</td>
+      <td>$5,115,492</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Romeo Langford</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$3,189,100</td>
+      <td>$3,438,600</td>
+      <td class="TOtext">$3,512,600</td>
+      <td class="TOtext">$4,840,363</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Chandler Hutchison</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$2,332,320</td>
+      <td>$2,443,440</td>
+      <td class="TOtext">$4,019,459</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tyler Herro</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,063,100</td>
+      <td>$2,166,255</td>
+      <td class="TOtext">$2,274,568</td>
+      <td class="TOtext">$ </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Goga Bitadze</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,694,300</td>
+      <td>$1,779,000</td>
+      <td class="TOtext">$1,863,700</td>
+      <td class="TOtext">$ </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Devonte' Graham</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$1,443,842</td>
+      <td>$ </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kendrick Nunn</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,443,842</td>
+      <td>$ </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Duncan Robinson</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,416,852</td>
+      <td class="NGtext">$1,663,861</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Ky Bowman</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$898,310</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>KZ Okpala</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$898,310</td>
+      <td>$1,517,981</td>
+      <td class="NGtext">$1,782,621</td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td><i>Marko Guduric</i></td>
+      <td>00</td>
+      <td>SG</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><i>Theo Pinson</i></td>
+      <td>00</td>
+      <td>SF</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="miasum20"> </td>
+      <td style="color: black;" id="miasum21"> </td>
+      <td style="color: black;" id="miasum22"> </td>
+      <td style="color: black;" id="miasum23"> </td>
+      <td style="color: black;" id="miasum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$73,449,346</td>
+	  <tr></tr><th>Dead Money:</th><td>$70,204,245</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-34,513,591</td>
+	  <tr></tr><th>Below Tax:</th><td>$-11,026,591</td>
+	  <tr></tr><th>Below Apron:</th><td>$-4,725,591</td>
+	</table>
+     </div>
+
+     <div id="MIA_Draft_Assets" class="miatabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="MIA_Rotation" class="miatabcontent">
+       <a name="#MIA_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="MIA_Extra_Cap_Stuff" class="miatabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="MIA_Transactions" class="miatabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+
+<div id="Charlotte_Hornets" class="vtabcontent">
+  <h3>Charlotte Hornets (48-34)</h3>
+    <p style="margin-top:-0.5em"><b>GM: Graham</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:teal;" onclick="openItem(event, 'CHO_Roster','chotabcontent')" id="chodefaultOpen"><b style="color:#1D1160;">Roster</b></button>
+  <button class="tablink2" style="background-color:teal;" onclick="openItem(event, 'CHO_Draft_Assets','chotabcontent')"><b style="color:#1D1160;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:teal;" onclick="openItem(event, 'CHO_Rotation','chotabcontent')"><b style="color:#1D1160;">Rotation</b></button>
+  <button class="tablink2" style="background-color:teal;" onclick="openItem(event, 'CHO_Extra_Cap_Stuff','chotabcontent')"><b style="color:#1D1160;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:teal;" onclick="openItem(event, 'CHO_Transactions','chotabcontent')"><b style="color:#1D1160;">Transactions</b></button>
+</div>
+     <div id="CHO_Roster" class="chotabcontent">
+       <a name="#CHO_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table13" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Kemba Walker</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$34,293,552</td>
+      <td>$37,037,036</td>
+      <td>$39,999,999</td>
+      <td>$43,199,999</td>
+      <td>$46,655,999</td>
+    </tr>
+    <tr>
+      <td>Andre Drummond</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$29,260,460</td>
+      <td class="POtext">$28,751,775</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Aaron Gordon</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$19,863,636</td>
+      <td>$18,136,364</td>
+      <td>$16,409,091</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Evan Fournier</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$17,000,000</td>
+      <td class="POtext">$17,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Michael Kidd-Gilchrist</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$13,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Jeremy Lamb</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$11,600,000</td>
+      <td>$12,180,000</td>
+      <td>$12,789,000</td>
+      <td>$13,428,450</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>DJ Augustin</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$7,250,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>JaMychal Green</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,711,000</td>
+      <td>$5,996,550</td>
+      <td>$6,296,378</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kevin Porter Jr</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$3,640,200</td>
+      <td>$3,822,240</td>
+      <td class="TOtext">$4,004,280</td>
+      <td class="TOtext">$5,722,116</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Terrance Ferguson</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,475,840</td>
+      <td>$3,944,013</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Vince Carter</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nerlens Noel</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Troy Daniels</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dwayne Bacon</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,618,520</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Isaiah Roby</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$898,310</td>
+      <td>$943,225</td>
+      <td class="TOtext">$990,386</td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td><i>Tremont Waters</i></td>
+      <td>00</td>
+      <td>PG</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><i>Sagaba Konate</i></td>
+      <td>00</td>
+      <td>PF</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="chosum20"> </td>
+      <td style="color: black;" id="chosum21"> </td>
+      <td style="color: black;" id="chosum22"> </td>
+      <td style="color: black;" id="chosum23"> </td>
+      <td style="color: black;" id="chosum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td>$151,473,210</td>
+	  <tr></tr><th>Dead Money:</th><td>$16,720,000</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-59,053,210</td>
+	  <tr></tr><th>Below Tax:</th><td>$-35,566,210</td>
+	  <tr></tr><th>Below Apron:</th><td>$-29,265,210</td>
+	</table>
+     </div>
+
+     <div id="CHO_Draft_Assets" class="chotabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="CHO_Rotation" class="chotabcontent">
+       <a name="#CHO_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="CHO_Extra_Cap_Stuff" class="chotabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="CHO_Transactions" class="chotabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+
+
+
+<div id="New_York_Knicks" class="vtabcontent">
+  <h3>New York Knicks (0-0)</h3>
+    <p style="margin-top:-0.5em"><b>GM: TBD</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'NYK_Roster','nyktabcontent')" id="nykdefaultOpen"><b style="color:#F58426;">Roster</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'NYK_Draft_Assets','nyktabcontent')"><b style="color:#F58426;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'NYK_Rotation','nyktabcontent')"><b style="color:#F58426;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'NYK_Extra_Cap_Stuff','nyktabcontent')"><b style="color:#F58426;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'NYK_Transactions','nyktabcontent')"><b style="color:#F58426;">Transactions</b></button>
+</div>
+     <div id="NYK_Roster" class="nyktabcontent">
+       <a name="#NYK_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table**" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Marc Gasol</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$25,595,700</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Brook Lopez</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$23,271,605</td>
+      <td>$20,728,395</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Victor Oladipo</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$21,000,000</td>
+      <td>$21,000,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Marvin Williams</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$15,006,250</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Norman Powell</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$10,116,576</td>
+      <td>$10,865,952</td>
+      <td class = "POtext">$11,615,328</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Fred VanVleet</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$9,346,153</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Trey Lyles</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,711,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Miles Bridges</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$3,755,400</td>
+      <td>$3,934,320</td>
+      <td class="TOtext">$5,421,493</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Bryn Forbes</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,875,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Gerald Green</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$2,564,753</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dejounte Murray</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$2,321,735</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Derrick Jones Jr.</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,645,357</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kyle O'Quinn</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Mario Hezonja</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="color:gray;">|</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="nyksum20"> </td>
+      <td style="color: black;" id="nyksum21"> </td>
+      <td style="color: black;" id="nyksum22"> </td>
+      <td style="color: black;" id="nyksum23"> </td>
+      <td style="color: black;" id="nyksum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td></td>
+	  <tr></tr><th>Dead Money:</th><td></td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td></td>
+	  <tr></tr><th>Below Tax:</th><td></td>
+	  <tr></tr><th>Below Apron:</th><td></td>
+	</table>
+     </div>
+
+     <div id="NYK_Draft_Assets" class="nyktabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="NYK_Rotation" class="nyktabcontent">
+       <a name="#NYK_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
+
+     </div>
+     <div id="NYK_Extra_Cap_Stuff" class="nyktabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="NYK_Transactions" class="nyktabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
+
+
+
+
+
+
 <div id="Portland_Trail_Blazers" class="vtabcontent">
   <h3>Portland Trail Blazers</h3>
   <p>Paris is the capital of France.</p> 
 </div>
 
-<div id="Utah Jazz" class="vtabcontent">
-  <h3>Utah Jazz</h3>
-  <p>Paris is not the capital of France.</p> 
-</div>
 
-<div id="Washington Wizards" class="vtabcontent">
+<div id="Washington_Wizards" class="vtabcontent">
   <h3>Washington Wizards</h3>
   <p>D.C. of Washington</p> 
 </div>
 
-<div id="Atlanta_Hawks" class="vtabcontent">
+<div id="New" class="vtabcontent">
   <h3>Atlanta Hawks</h3>
   <p>Georgia. ATL.</p> 
 </div>
 
-<div id="Boston Celtics" class="vtabcontent">
-  <h3>Boston Celtics</h3>
-  <p>Will the Jays win a championship?</p> 
+
+
+
+
+
+
+<div id="Sacramento_Kings" class="vtabcontent">
+    <h3>Sacramento Kings (42-40)</h3>
+  <p style="margin-top:-0.5em"><b>GM: Fowad</b></p>
+<div class="scrollmenu2">
+  <button class="tablink2" style="background-color:purple;" onclick="openItem(event, 'SAC_Roster','sactabcontent')" id="sacdefaultOpen"><b style="color:lightgray;">Roster</b></button>
+  <button class="tablink2" style="background-color:purple;" onclick="openItem(event, 'SAC_Draft_Assets','sactabcontent')"><b style="color:lightgray;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:purple;" onclick="openItem(event, 'SAC_Rotation','sactabcontent')"><b style="color:lightgray;">Rotation</b></button>
+  <button class="tablink2" style="background-color:purple;" onclick="openItem(event, 'SAC_Extra_Cap_Stuff','sactabcontent')"><b style="color:lightgray;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:purple;" onclick="openItem(event, 'SAC_Transactions','sactabcontent')"><b style="color:lightgray;">Transactions</b></button>
 </div>
+     <div id="SAC_Roster" class="sactabcontent">
+       <a name="#SAC_Roster"></a>
+       <h3>Roster</h3>
+	<table id="table11" class="w3-table-all" style="display:inline-block;float:left">
+    <tr>
+      <th>Name</th>
+      <th>2K Rating</th>
+      <th>Position</th>
+      <th>19/20</th>
+      <th>20/21</th>
+      <th>21/22</th>
+      <th>22/23</th>
+      <th>23/24</th>
+    </tr>
+    <tr>
+      <td>Hassan Whiteside</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$27,093,018</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Tony Snell</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$11,592,857</td>
+      <td class="POtext">$12,178,571</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rodney Hood</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td>$10,000,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Rudy Gay</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$9,246,000</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$6,392,760</td>
+      <td>$8,099,627</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Buddy Hield</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$4,861,208</td>
+      <td>$26,000,000</td>
+      <td>$27,000,000</td>
+      <td>$29,000,000</td>
+      <td>$31,000,000</td>
+    </tr>
+    <tr>
+      <td>Bobby Portis</td>
+      <td>00</td>
+      <td>PF</td>
+      <td>$5,250,000</td>
+      <td>$5,000,000</td>
+      <td>$4,750,000</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Kevin Knox</td>
+      <td>00</td>
+      <td>SF</td>
+      <td>$4,380,120</td>
+      <td>$4,588,680</td>
+      <td class="TOtext">$5,845,978</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Zach Collins</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$4,240,200</td>
+      <td>$5,406,255</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Harry Giles</td>
+      <td>00</td>
+      <td>C</td>
+      <td>$2,578,800</td>
+      <td>$3,976,510</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Dzanan Musa</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,911,600</td>
+      <td>$2,002,800</td>
+      <td style="color:blue;">$3,615,054</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Seth Curry</td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,620,564</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a onclick="openPage('Players', this);openItem3(event, 'Gary_Trent_Jr');">Gary Trent Jr.</a></td>
+      <td>00</td>
+      <td>SG</td>
+      <td>$1,618,486</td>
+      <td class="NGtext">$1,699,410</td>
+      <td> </td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+      <td>PG</td>
+      <td>$898,310</td>
+      <td>$943,225</td>
+      <td class="NGtext">$990,386</td>
+      <td style="width:92px;"> </td>
+      <td style="width:92px;"> </td>
+    </tr>
+    <tr>
+      <td style="color: black;"><b>Total</b></td>
+      <td> </td>
+      <td> </td>
+      <td style="color: black;" id="sacsum20"> </td>
+      <td style="color: black;" id="sacsum21"> </td>
+      <td style="color: black;" id="sacsum22"> </td>
+      <td style="color: black;" id="sacsum23"> </td>
+      <td style="color: black;" id="sacsum24"> </td>
+    </tr>
+   </table>
+       <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
+	  <tr></tr><td style="color:blue;">Team Option</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
+	  <tr></tr><td><i>Two-Way</i></td>
+	</table>
+        <table style="display:inline-block;float:right;text-align:left;">
+	  <th>Payroll:</th><td></td>
+	  <tr></tr><th>Dead Money:</th><td></td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td></td>
+	  <tr></tr><th>Below Tax:</th><td></td>
+	  <tr></tr><th>Below Apron:</th><td></td>
+	</table>
+     </div>
 
+     <div id="SAC_Draft_Assets" class="sactabcontent">
+       <h3>Draft Picks</h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Team</th>
+      <th>Round</th>
+      <th>Year</th>
+      <th>Protections</th>
+    </tr>
+    <tr>
+      <td><a onclick="openPage('Teams', this);openCity(event, 'Sacramento_Kings');openItem(event, 'SAC_Roster');">Kings</a></td>
+      <td>1</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2020</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Pacers</td>
+      <td>1</td>
+      <td>2021</td>
+      <td>1-14</td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2021</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Nuggets</td>
+      <td>2</td>
+      <td>2022</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2023</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2024</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2025</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>1</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>Raptors</td>
+      <td>2</td>
+      <td>2026</td>
+      <td> </td>
+    </tr>
+  </table>
+     </div>
+     <div id="SAC_Rotation" class="sactabcontent">
+       <a name="#SAC_rotation"></a>
+       <h3> Rotation </h3>
+	<table class="w3-table-all">
+    <tr>
+      <th>Position</th>
+      <th>Name</th>
+      <th>Minutes</th>
+    </tr>
+    <tr>
+      <td>PG</td>
+      <td>James Harden</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SG</td>
+      <td>Donovan Mitchell</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>SF</td>
+      <td>Rodney Hood</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>PF</td>
+      <td>Trey Lyles?</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>De'Aaron Fox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Buddy Hield</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Bobby Portis</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Zach Collins</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Harry Giles</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Kevin Knox</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Seth Curry</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Patrick McCaw</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Shamorie Ponds</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Dzazan Musa</td>
+      <td>00</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Gary Trent Jr</td>
+      <td>00</td>
+    </tr>
+  </table>   
 
-
-
-
-
-<div id="Sacramento Kings" class="vtabcontent">
-  <h3>Sacramento Kings</h3>
-  <p><a href="#" onclick="openPage2('Players','James_Harden')"></a></p>
-</div>
+     </div>
+     <div id="SAC_Extra_Cap_Stuff" class="sactabcontent">
+       <h3>Extra Cap Stuff</h3>
+       <p>Cap Holds, Exceptions, and Dead Money will go here</p>
+     </div>
+     <div id="SAC_Transactions" class="sactabcontent">
+       <h3>Transactions</h3>
+       <p>All the trades and stuff you've made</p>
+     </div>
+    </div>
 
 
 
@@ -1503,14 +5618,14 @@ table td2, table th2 {
 
 
 <div id="Toronto_Raptors" class="vtabcontent">
-  <h3>Toronto Raptors</h3>
+  <h3>Toronto Raptors (0-0)</h3>
   <p style="margin-top:-0.5em"><b>GM: The Saucy Kitty</b></p>
 <div class="scrollmenu2">
-  <button class="tablink2" onclick="openItem(event, 'TOR_Roster','stabcontent')" id="tordefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" onclick="openItem(event, 'TOR_Draft_Assets','stabcontent')"><b>Draft Assets</b></button>
-  <button class="tablink2" onclick="openItem(event, 'TOR_Rotation','stabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" onclick="openItem(event, 'TOR_Extra_Cap_Stuff','stabcontent')"><b>Extra Cap Stuff</b></button>
-  <button class="tablink2" onclick="openItem(event, 'TOR_Transactions','stabcontent')"><b>Transactions</b></button>
+  <button class="tablink2" style="background-color:#CE1141;" onclick="openItem(event, 'TOR_Roster','stabcontent')" id="tordefaultOpen"><b style="color:black">Roster</b></button>
+  <button class="tablink2" style="background-color:#CE1141;" onclick="openItem(event, 'TOR_Draft_Assets','stabcontent')"><b style="color:black">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#CE1141;" onclick="openItem(event, 'TOR_Rotation','stabcontent')"><b style="color:black">Rotation</b></button>
+  <button class="tablink2" style="background-color:#CE1141;" onclick="openItem(event, 'TOR_Extra_Cap_Stuff','stabcontent')"><b style="color:black">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#CE1141;" onclick="openItem(event, 'TOR_Transactions','stabcontent')"><b style="color:black">Transactions</b></button>
 </div>
      <div id="TOR_Roster" class="stabcontent">
        <a name="#TOR_Roster"></a>
@@ -1572,7 +5687,7 @@ table td2, table th2 {
       <td>SG</td>
       <td>$10,116,576</td>
       <td>$10,865,952</td>
-      <td class = "greentext">$11,615,328</td>
+      <td class = "green">$11,615,328</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -1602,7 +5717,7 @@ table td2, table th2 {
       <td>SF</td>
       <td>$3,755,400</td>
       <td>$3,934,320</td>
-      <td class="bluetext">$5,421,493</td>
+      <td class="TOtext">$5,421,493</td>
       <td> </td>
       <td> </td>
     </tr>
@@ -1689,16 +5804,16 @@ table td2, table th2 {
    </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td class="greentext">Player Option</td>
-	  <tr></tr><td style="color:#89CFF0;">Non-Guaranteed</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
 	  <tr></tr><td><i>Two-Way</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
 	  <th>Payroll:</th><td>$126,450,657</td>
 	  <tr></tr><th>Dead Money:</th><td>$1,125,000</td>
-	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
-	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
 	  <tr></tr><th>Below Cap:</th><td></td>
 	  <tr></tr><th>Below Tax:</th><td></td>
 	  <tr></tr><th>Below Apron:</th><td></td>
@@ -1896,14 +6011,14 @@ table td2, table th2 {
 
 
 <div id="Philadelphia_76ers" class="vtabcontent">
-  <h3>Philadelphia 76ers</h3>
+  <h3>Philadelphia 76ers (58-24)</h3>
   <p style="margin-top:-0.5em"><b>GM: Christian</b></p>
 <div class="scrollmenu2">
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Roster','phitabcontent')" id="phidefaultOpen"><b>Roster</b></button>
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Draft_Assets','phitabcontent')"><b>Draft Assets</b></button>
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Rotation','phitabcontent')"><b>Rotation</b></button>
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Extra_Cap_Stuff','phitabcontent')"><b>Extra Cap Stuff</b></button>
-  <button class="tablink2" style="background-color:blue;" onclick="openItem(event, 'PHI_Transactions','phitabcontent')"><b>Transactions</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'PHI_Roster','phitabcontent')" id="phidefaultOpen"><b style="color:#ED1746;">Roster</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'PHI_Draft_Assets','phitabcontent')"><b style="color:#ED1746;">Draft Assets</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'PHI_Rotation','phitabcontent')"><b style="color:#ED1746;">Rotation</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'PHI_Extra_Cap_Stuff','phitabcontent')"><b style="color:#ED1746;">Extra Cap Stuff</b></button>
+  <button class="tablink2" style="background-color:#006BB6;" onclick="openItem(event, 'PHI_Transactions','phitabcontent')"><b style="color:#ED1746;">Transactions</b></button>
 </div>
      <div id="PHI_Roster" class="phitabcontent">
        <a name="#PHI_Roster"></a>
@@ -1926,7 +6041,7 @@ table td2, table th2 {
       <td>$32,700,000</td>
       <td>$34,335,000</td>
       <td>$36,051,750</td>
-      <td class="greentext">$37,854,338</td>
+      <td class="POtext">$37,854,338</td>
       <td> </td>
     </tr>
     <tr>
@@ -1937,7 +6052,7 @@ table td2, table th2 {
       <td>$32,400,000</td>
       <td>$34,992,000</td>
       <td>$37,791,360</td>
-      <td class="greentext">$40,814,669</td>
+      <td class="POtext">$40,814,669</td>
     </tr>
     <tr>
       <td>Joel Embiid</td>
@@ -1956,7 +6071,7 @@ table td2, table th2 {
       <td>$11,273,092</td>
       <td>$11,836,747</td>
       <td>$12,428,584</td>
-      <td class="greentext">$13,050,013</td>
+      <td class="POtext">$13,050,013</td>
       <td> </td>
     </tr>
     <tr>
@@ -2082,19 +6197,19 @@ table td2, table th2 {
    </table>
        <table style="display:inline-block;float:center;text-align:left;margin-left:1em;">
 	  <tr></tr><td style="color:blue;">Team Option</td>
-	  <tr></tr><td class="greentext">Player Option</td>
-	  <tr></tr><td style="color:#89CFF0;">Non-Guaranteed</td>
+	  <tr></tr><td class="POtext">Player Option</td>
+	  <tr></tr><td class="NGtext">Non-Guaranteed</td>
 	  <tr></tr><td><i>Two-Way</i></td>
 	</table>
         <table style="display:inline-block;float:right;text-align:left;">
 	  <th>Payroll:</th><td>$128,032,146</td>
 	  <tr></tr><th>Dead Money:</th><td>$0</td>
-	  <tr></tr><th>Salary Cap:</th><td>$109,000,000</td>
-	  <tr></tr><th>Luxury Tax:</th><td>$132,000,000</td>
-	  <tr></tr><th>Apron:</th><td>$138,000,000</td>
-	  <tr></tr><th>Below Cap:</th><td>$-19,032,146</td>
-	  <tr></tr><th>Below Tax:</th><td>$3,967,854</td>
-	  <tr></tr><th>Below Apron:</th><td>$9,967,854</td>
+	  <tr></tr><th>Salary Cap:</th><td>$109,140,000</td>
+	  <tr></tr><th>Luxury Tax:</th><td>$132,627,000</td>
+	  <tr></tr><th>Apron:</th><td>$138,928,000</td>
+	  <tr></tr><th>Below Cap:</th><td>$-18,892,146</td>
+	  <tr></tr><th>Below Tax:</th><td>$4,594,854</td>
+	  <tr></tr><th>Below Apron:</th><td>$10,895,854</td>
 	</table>
      </div>
 
@@ -2313,47 +6428,47 @@ table td2, table th2 {
     </tr>
     <tr>
       <td>1 - z</td>
-      <td>Philadelphia 76ers</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Philadelphia_76ers');">Philadelphia 76ers</a></td>
       <td>58-24</td>
     </tr>
     <tr>
       <td>2 - x</td>
-      <td>Washington Wizards</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Washington_Wizards');">Washington Wizards</a></td>
       <td>57-25</td>
     </tr>
     <tr>
       <td>3 - x</td>
-      <td>Atlanta Hawks</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Atlanta_Hawks');">Atlanta Hawks</a></td>
       <td>50-32</td>
     </tr>
     <tr>
       <td>4 - x</td>
-      <td>Boston Celtics</td>
-      <td>58-24</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Boston_Celtics');">Boston Celtics</a></td>
+      <td>49-33</td>
     </tr>
     <tr>
       <td>5 - x</td>
-      <td>Charlotte Hornets</td>
-      <td>58-24</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Charlotte_Hornets');">Charlotte Hornets</a></td>
+      <td>48-34</td>
     </tr>
     <tr>
       <td>6 - x</td>
-      <td>Indiana Pacers - x</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Indiana_Pacers');">Indiana Pacers</a></td>
       <td>46-36</td>
     </tr>
     <tr>
       <td>7 - x</td>
-      <td>Milwaukee Bucks</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Milwaukee_Bucks');">Milwaukee Bucks</a></td>
       <td>46-36</td>
     </tr>
     <tr>
       <td>8 - x</td>
-      <td>Miami Heat</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Miami_Heat');">Miami Heat</a></td>
       <td>44-38</td>
     </tr>
     <tr>
       <td>9</td>
-      <td>Chicago Bulls</td>
+      <td><a href="#" onclick="openPage('Teams', this);openCity(event, 'Chicago_Bulls');">Chicago Bulls</a></td>
       <td>42-40?</td>
     </tr>
     <tr>
@@ -2503,17 +6618,23 @@ table td2, table th2 {
       <img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/1966.png" alt="LBJ" width="150" height="109">
       <p style="color:purple";>Team: Los Angeles Lakers</p> 
       <p>2019/20 Salary: Amount</p>
+      <p>Injury Status: Healthy</p>
+      <p>Transactions: N/A</p>
   </div>
-
-<div id="Damian_Lillard" class="ptabcontent">
-  <h3>Damian Lillard</h3>
-  <p>Team: Portland Trail Blazers</p> 
-</div>
 
 <div id="James_Harden" class="ptabcontent">
   <h3>James Harden</h3>
   <a name="#James_Harden"></a>
-  <p>Georgia. ATL.</p> 
+  <img src="https://a.espncdn.com/i/headshots/nba/players/full/3992.png" alt="JH" width="150" height="109">
+  <p style="color:orange";>Team: Phoenix Suns</p> 
+  <p>2019/20 Salary: Amount</p>
+  <p>Injury Status: TT</p>
+  <p>Transactions: Was traded for someone</p>
+</div>
+
+<div id="Damian_Lillard" class="ptabcontent">
+  <h3>Damian Lillard</h3>
+  <p>Team: Portland Trail Blazers</p> 
 </div>
 
 <div id="Gary_Trent_Jr" class="ptabcontent">
