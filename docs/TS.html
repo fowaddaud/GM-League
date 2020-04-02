@@ -2,7 +2,7 @@
 <html>
 <head>
    <title></title>
-   <link rel = "shortcut icon" type = "image/png" href = "GVO.png">
+   <link rel = "shortcut icon" type = "image/png" href = "/Users/fowaddaud/Desktop/GVO.png">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {box-sizing: border-box}
@@ -27,7 +27,7 @@ body, html {
   cursor: pointer;
   padding: 14px 0px;
   font-size: 17px;
-  width: 150px;
+  width: 11.111%;
 }
 
 .POtext{
@@ -302,6 +302,25 @@ table td2, table th2 {
   whitespace: nowrap;
 }
 
+
+div.scrollmenu3 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu3 e {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu3 e:hover {
+  background-color: #777;
+}
+
 .scrollmenu2 {
   background-color: #333;
   overflow: auto;
@@ -317,8 +336,8 @@ table td2, table th2 {
   text-align: center;
   padding: 13px;
   text-decoration: none;
-  overflow: auto;
   white-space: nowrap;
+  overflow: auto;
   font-weight:bold;
   font-size: 15px;
 }
@@ -465,16 +484,17 @@ a:visited{
 </head>
 <body>
 
-
+<div class="scrollmenu3">
 <button class="tablink" onclick="openPage('Home', this, 'red')"id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('Teams', this, 'orange')">Teams</button>
 <button class="tablink" onclick="openPage('Transaction_History', this, 'green')">Transaction History</button>
-<button class="tablink" onclick="openPage('Submit_Transaction', this, 'blue')">Submit Transaction</button>
+<button class="tablink" onclick="openPage('Submit_Transaction', this, 'lightgreen')">Submit Transaction</button>
 <button class="tablink" onclick="openPage('Standings', this, 'lightblue')">Standings</button>
-<button class="tablink" onclick="openPage('Box_Scores', this, 'lightblue')">Box Scores</button>
+<button class="tablink" onclick="openPage('Box_Scores', this, 'blue')">Box Scores</button>
 <button class="tablink" onclick="openPage('Trade_Machine', this, 'magenta')">Trade Machine</button>
 <button class="tablink" onclick="openPage('Players', this, 'purple')">Players</button>
 <button class="tablink" onclick="openPage('Free_Agents', this, 'lightblue')">Free Agents</button>
+</div>
 
 <div id="Home" class="tabcontent">
   <h2>Home</h2>
@@ -482,7 +502,7 @@ a:visited{
   <p><a onclick="openPage('Teams', this);openCity(event, 'Chicago_Bulls');">Chi</a></p>
   <p><a onclick="openPage('Teams', this);openCity(event, 'Sacramento_Kings');">Sac</a></p>
   <p><a onclick="openPage('Teams', this);openCity(event, 'Toronto_Raptors');">Tor</a></p>
-  <img src="GVO.png" alt="GVO" width="500" height="333">
+  <img src="/Users/fowaddaud/Desktop/GVO.png" alt="GVO" width="500" height="333">
 </div>
 
 <div id="Teams" class="tabcontent">
@@ -6584,7 +6604,7 @@ a:visited{
       <td> </td>
     </tr>
    </table>
-   <img src="bracket.png" alt="bracket" width="600" height="341" style="margin-left:0.9em">
+   <img src="/Users/fowaddaud/Downloads/bracket.png" alt="bracket" width="600" height="341" style="margin-left:0.9em">
    </div>
 
 <div id="Box_Scores" class="tabcontent">
