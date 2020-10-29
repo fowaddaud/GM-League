@@ -560,7 +560,7 @@ table td2, table th2 {
 }
 .vscrollmenu {
   width: 200px;
-  height: 450px;
+  height: 80%;
 }
 .vscrollmenu c {
   display: block;
@@ -571,6 +571,27 @@ table td2, table th2 {
 }
 
 .vscrollmenu c:hover {
+  background-color: #777;
+}
+	
+.vscrollmenu2 {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+}
+.vscrollmenu2 {
+  width: 200px;
+  height: 450px;
+}
+.vscrollmenu2 c {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.vscrollmenu2 c:hover {
   background-color: #777;
 }
 
@@ -592,13 +613,24 @@ a:visited{
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   width: 200px;
-  height: 300px;
+  height: 750px;
   padding: 0px;
   text-align: center;
   border-collapse: separate;
   margin-bottom: 0em;
 }
 
+.tab3 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 200px;
+  height: 80%;
+  padding: 0px;
+  text-align: center;
+  border-collapse: separate;
+  margin-bottom: 0em;
+}
 
 /* Style the buttons inside the tab */
 .tab button {
@@ -16931,8 +16963,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <h2>Free Agents</h2>
   <p>Coming Soon</p>
 
-  <div class="tab2">
-  <div class="vscrollmenu">	
+  <div class="tab3">
+  <div class="vscrollmenu2">	
   <button class="tablinks" onclick="openItem3(event, 'Guards')" id="pdefaultOpen"><c>Guards</c></button>	
   <button class="tablinks" onclick="openItem3(event, 'Wings')"><c>Wings</c></button>	
   <button class="tablinks" onclick="openItem3(event, 'Bigs')"><c>Bigs</c></button>
