@@ -122,7 +122,7 @@ function numberWithCommas(x) {
 	
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
 	var milbt = 139000000 - parseInt(sumVal);
-	document.getElementById("mil_bc").innerHTML = 115000000 - parseInt(sumVal);
+	document.getElementById("mil_bc").innerHTML = parseInt(sumVal);
 	document.getElementById("mil_bt").innerHTML = "$" + milbt;
 	var milba = 145000000-parseInt(sumVal);
 	document.getElementById("mil_ba").innerHTML = "$"+milba;
