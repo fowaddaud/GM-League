@@ -63,9 +63,13 @@ function numberWithCommas(x) {
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("phisum20").innerHTML = "$"+sumVal;
 	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
-	document.getElementById("phi_bc").innerHTML = "$"+(115000000-sumVal);
-	document.getElementById("phi_bt").innerHTML = "$"+(139000000-sumVal);
-	document.getElementById("phi_ba").innerHTML = "$"+(145000000-sumVal);
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + phibc;
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + phibt;
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+phiba;
 	var table = document.getElementById("table2"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -119,12 +123,12 @@ function numberWithCommas(x) {
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("milsum20").innerHTML = "$"+sumVal;
 	document.getElementById("mil_pay").innerHTML = "$"+sumVal;
-	
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var milbt = 139000000 - parseInt(sumVal);
-	document.getElementById("mil_bc").innerHTML = parseInt(sumVal);
+	var milbc = 115000000 - 1865547 - parseInt(sumVal);
+	document.getElementById("mil_bc").innerHTML = "$" + milbc;
+	var milbt = 139000000 - parseInt(sumVal) - 1865547;
 	document.getElementById("mil_bt").innerHTML = "$" + milbt;
-	var milba = 145000000-parseInt(sumVal);
+	var milba = 145000000-parseInt(sumVal) -1865547;
 	document.getElementById("mil_ba").innerHTML = "$"+milba;
 	var table = document.getElementById("table3"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
