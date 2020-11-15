@@ -65,7 +65,7 @@ function numberWithCommas(x) {
 	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
 	var phibc = 115000000 - parseInt(sumVal);
-	document.getElementById("phi_bc").innerHTML = "$" + phibc;
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
 	var phibt = 139000000 - parseInt(sumVal) - 1865547;
 	document.getElementById("phi_bt").innerHTML = "$" + phibt;
 	var phiba = 145000000-parseInt(sumVal);
