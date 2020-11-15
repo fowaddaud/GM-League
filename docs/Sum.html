@@ -53,7 +53,8 @@ function numberWithCommas(x) {
 
 
 
-//2	var table = document.getElementById("table2"), sumVal = 0;
+//2	
+	var table = document.getElementById("table2"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[3].innerHTML;
                 	c = c.replace(',','');c = c.replace(',','');c = c.replace('$','');c = c.replace(' ','0')
@@ -118,11 +119,11 @@ function numberWithCommas(x) {
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("milsum20").innerHTML = "$"+sumVal;
 	document.getElementById("mil_pay").innerHTML = "$"+sumVal;
-	document.getElementById("mil_bc").innerHTML = (115000000-parseInt(sumVal));
-	var milbt = 139000000-parseInt(sumVal)
-	document.getElementById("mil_bt").innerHTML = milbt;
-	var milba = 145000000-sumVal
-	document.getElementById("mil_ba").innerHTML = "$"+milba;
+	document.getElementById("mil_bc").innerHTML = (115000000-Int(sumVal));
+	var milbt = 139000000-Int(sumVal);
+	document.getElementById("mil_bt").innerHTML = "$" + milbt;
+	var milba = 145000000-sumVal;
+	document.getElementById("mil_ba").innerHTML = "$"+sumVal;
 	var table = document.getElementById("table3"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
