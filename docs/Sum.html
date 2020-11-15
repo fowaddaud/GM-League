@@ -119,10 +119,12 @@ function numberWithCommas(x) {
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("milsum20").innerHTML = "$"+sumVal;
 	document.getElementById("mil_pay").innerHTML = "$"+sumVal;
-	var milbt = Number(sumVal);
-	document.getElementById("mil_bc").innerHTML = sumVal;
+	
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var milbt = 139000000 - parseInt(sumVal);
+	document.getElementById("mil_bc").innerHTML = 115000000 - parseInt(sumVal);
 	document.getElementById("mil_bt").innerHTML = "$" + milbt;
-	var milba = 145000000-Number(sumVal);
+	var milba = 145000000-parseInt(sumVal);
 	document.getElementById("mil_ba").innerHTML = "$"+milba;
 	var table = document.getElementById("table3"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
