@@ -10,6 +10,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("torsum20").innerHTML = "$"+sumVal;
+	document.getElementById("tor_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var torbc = 115000000 - parseInt(sumVal);
+	document.getElementById("tor_bc").innerHTML = "$" + numberWithCommas(torbc);
+	var torbt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("tor_bt").innerHTML = "$" + numberWithCommas(torbt);
+	var torba = 145000000-parseInt(sumVal);
+	document.getElementById("tor_ba").innerHTML = "$"+numberWithCommas(torba);
 	var table = document.getElementById("table"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -67,9 +75,9 @@ function numberWithCommas(x) {
 	var phibc = 115000000 - parseInt(sumVal);
 	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
 	var phibt = 139000000 - parseInt(sumVal) - 1865547;
-	document.getElementById("phi_bt").innerHTML = "$" + phibt;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
 	var phiba = 145000000-parseInt(sumVal);
-	document.getElementById("phi_ba").innerHTML = "$"+phiba;
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table2"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -124,12 +132,12 @@ function numberWithCommas(x) {
 	document.getElementById("milsum20").innerHTML = "$"+sumVal;
 	document.getElementById("mil_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var milbc = 115000000 - 1865547 - parseInt(sumVal);
-	document.getElementById("mil_bc").innerHTML = "$" + milbc;
+	var milbc = 115000000 - parseInt(sumVal);
+	document.getElementById("mil_bc").innerHTML = "$" + numberWithCommas(milbc);
 	var milbt = 139000000 - parseInt(sumVal) - 1865547;
-	document.getElementById("mil_bt").innerHTML = "$" + milbt;
-	var milba = 145000000-parseInt(sumVal) -1865547;
-	document.getElementById("mil_ba").innerHTML = "$"+milba;
+	document.getElementById("mil_bt").innerHTML = "$" + numberWithCommas(milbt);
+	var milba = 145000000-parseInt(sumVal);
+	document.getElementById("mil_ba").innerHTML = "$"+numberWithCommas(milba);
 	var table = document.getElementById("table3"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -181,6 +189,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("chisum20").innerHTML = "$"+sumVal;
+	document.getElementById("chi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var chibc = 115000000 - parseInt(sumVal);
+	document.getElementById("chi_bc").innerHTML = "$" + numberWithCommas(chibc);
+	var chibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("chi_bt").innerHTML = "$" + numberWithCommas(chibt);
+	var chiba = 145000000-parseInt(sumVal);
+	document.getElementById("chi_ba").innerHTML = "$"+numberWithCommas(chiba);
 	var table = document.getElementById("table4"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -232,6 +248,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("clesum20").innerHTML = "$"+sumVal;
+	document.getElementById("cle_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var clebc = 115000000 - parseInt(sumVal);
+	document.getElementById("cle_bc").innerHTML = "$" + numberWithCommas(clebc);
+	var clebt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("cle_bt").innerHTML = "$" + numberWithCommas(clebt);
+	var cleba = 145000000-parseInt(sumVal);
+	document.getElementById("cle_ba").innerHTML = "$"+numberWithCommas(cleba);
 	var table = document.getElementById("table5"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -282,6 +306,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("bossum20").innerHTML = "$"+sumVal;
+	document.getElementById("bos_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var bosbc = 115000000 - parseInt(sumVal);
+	document.getElementById("bos_bc").innerHTML = "$" + numberWithCommas(bosbc);
+	var bosbt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("bos_bt").innerHTML = "$" + numberWithCommas(bosbt);
+	var bosba = 145000000-parseInt(sumVal);
+	document.getElementById("bos_ba").innerHTML = "$"+numberWithCommas(bosba);
 	var table = document.getElementById("table6"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -333,6 +365,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("lacsum20").innerHTML = "$"+sumVal;
+	document.getElementById("lac_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var lacbc = 115000000 - parseInt(sumVal);
+	document.getElementById("lac_bc").innerHTML = "$" + numberWithCommas(lacbc);
+	var lacbt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("lac_bt").innerHTML = "$" + numberWithCommas(lacbt);
+	var lacba = 145000000-parseInt(sumVal);
+	document.getElementById("lac_ba").innerHTML = "$"+numberWithCommas(lacba);
 	var table = document.getElementById("table7"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -384,6 +424,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("memsum20").innerHTML = "$"+sumVal;
+	document.getElementById("mem_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var membc = 115000000 - parseInt(sumVal);
+	document.getElementById("mem_bc").innerHTML = "$" + numberWithCommas(membc);
+	var membt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("mem_bt").innerHTML = "$" + numberWithCommas(membt);
+	var memba = 145000000-parseInt(sumVal);
+	document.getElementById("mem_ba").innerHTML = "$"+numberWithCommas(memba);
 	var table = document.getElementById("table8"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -436,6 +484,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("atlsum20").innerHTML = "$"+sumVal;
+	document.getElementById("atl_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var atlbc = 115000000 - parseInt(sumVal);
+	document.getElementById("atl_bc").innerHTML = "$" + numberWithCommas(atlbc);
+	var atlbt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("atl_bt").innerHTML = "$" + numberWithCommas(atlbt);
+	var atlba = 145000000-parseInt(sumVal);
+	document.getElementById("atl_ba").innerHTML = "$"+numberWithCommas(atlba);
 	var table = document.getElementById("table9"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -487,6 +543,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("sacsum20").innerHTML = "$"+sumVal;
+	document.getElementById("sac_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var sacbc = 115000000 - parseInt(sumVal);
+	document.getElementById("sac_bc").innerHTML = "$" + numberWithCommas(sacbc);
+	var sacbt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("sac_bt").innerHTML = "$" + numberWithCommas(sacbt);
+	var sacba = 145000000-parseInt(sumVal);
+	document.getElementById("sac_ba").innerHTML = "$"+numberWithCommas(sacba);
 	var table = document.getElementById("table11"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -540,6 +604,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("utasum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table10"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -591,6 +663,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("miasum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table12"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -643,6 +723,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("chosum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table13"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -695,6 +783,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("nyksum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table14"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -747,6 +843,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("lalsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table15"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -799,6 +903,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("orlsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table16"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -852,6 +964,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("dalsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table17"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -906,6 +1026,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("bknsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table18"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -962,6 +1090,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("densum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table19"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1015,6 +1151,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("indsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table20"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1068,6 +1212,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("nopsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table21"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1123,6 +1275,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("detsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table22"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1177,6 +1337,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("housum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table23"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1233,6 +1401,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("sassum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table24"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1289,6 +1465,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("phxsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table25"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1345,6 +1529,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("okcsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table26"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1400,6 +1592,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("minsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table27"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1455,6 +1655,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("porsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table28"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1511,6 +1719,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("gswsum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table29"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
@@ -1566,6 +1782,14 @@ function numberWithCommas(x) {
             	}
 	sumVal = numberWithCommas(sumVal);
 	document.getElementById("wassum20").innerHTML = "$"+sumVal;
+	document.getElementById("phi_pay").innerHTML = "$"+sumVal;
+	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
+	var phibc = 115000000 - parseInt(sumVal);
+	document.getElementById("phi_bc").innerHTML = "$" + numberWithCommas(phibc);
+	var phibt = 139000000 - parseInt(sumVal) - 1865547;
+	document.getElementById("phi_bt").innerHTML = "$" + numberWithCommas(phibt);
+	var phiba = 145000000-parseInt(sumVal);
+	document.getElementById("phi_ba").innerHTML = "$"+numberWithCommas(phiba);
 	var table = document.getElementById("table30"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
                 	var c = table.rows[i].cells[4].innerHTML;
