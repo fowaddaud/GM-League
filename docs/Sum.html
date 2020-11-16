@@ -845,11 +845,11 @@ function numberWithCommas(x) {
 	document.getElementById("lalsum20").innerHTML = "$"+sumVal;
 	document.getElementById("lal_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var lalbc = 115000000 - parseInt(sumVal);
+	var lalbc = 115000000 - parseInt(sumVal) - 5000000;
 	document.getElementById("lal_bc").innerHTML = "$" + numberWithCommas(lalbc);
-	var lalbt = 139000000 - parseInt(sumVal);
+	var lalbt = 139000000 - parseInt(sumVal) - 5000000;
 	document.getElementById("lal_bt").innerHTML = "$" + numberWithCommas(lalbt);
-	var lalba = 145000000-parseInt(sumVal);
+	var lalba = 145000000-parseInt(sumVal) - 5000000;
 	document.getElementById("lal_ba").innerHTML = "$"+numberWithCommas(lalba);
 	var table = document.getElementById("table15"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
