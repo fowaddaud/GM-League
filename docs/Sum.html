@@ -785,11 +785,11 @@ function numberWithCommas(x) {
 	document.getElementById("nyksum20").innerHTML = "$"+sumVal;
 	document.getElementById("nyk_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var nykbc = 115000000 - parseInt(sumVal);
+	var nykbc = 115000000 - parseInt(sumVal) - 6431667;
 	document.getElementById("nyk_bc").innerHTML = "$" + numberWithCommas(nykbc);
-	var nykbt = 139000000 - parseInt(sumVal);
+	var nykbt = 139000000 - parseInt(sumVal) - 6431667;
 	document.getElementById("nyk_bt").innerHTML = "$" + numberWithCommas(nykbt);
-	var nykba = 145000000-parseInt(sumVal);
+	var nykba = 145000000-parseInt(sumVal) - 6431667;
 	document.getElementById("nyk_ba").innerHTML = "$"+numberWithCommas(nykba);
 	var table = document.getElementById("table14"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
