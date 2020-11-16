@@ -665,11 +665,11 @@ function numberWithCommas(x) {
 	document.getElementById("miasum20").innerHTML = "$"+sumVal;
 	document.getElementById("mia_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var miabc = 115000000 - parseInt(sumVal);
+	var miabc = 115000000 - parseInt(sumVal) - 350087;
 	document.getElementById("mia_bc").innerHTML = "$" + numberWithCommas(miabc);
-	var miabt = 139000000 - parseInt(sumVal);
+	var miabt = 139000000 - parseInt(sumVal) - 350087;
 	document.getElementById("mia_bt").innerHTML = "$" + numberWithCommas(miabt);
-	var miaba = 145000000-parseInt(sumVal);
+	var miaba = 145000000-parseInt(sumVal) - 350087;
 	document.getElementById("mia_ba").innerHTML = "$"+numberWithCommas(miaba);
 	var table = document.getElementById("table12"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
@@ -725,11 +725,11 @@ function numberWithCommas(x) {
 	document.getElementById("chosum20").innerHTML = "$"+sumVal;
 	document.getElementById("cho_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var chobc = 115000000 - parseInt(sumVal);
+	var chobc = 115000000 - parseInt(sumVal) - 5573333;
 	document.getElementById("cho_bc").innerHTML = "$" + numberWithCommas(chobc);
-	var chobt = 139000000 - parseInt(sumVal);
+	var chobt = 139000000 - parseInt(sumVal) - 5573333;
 	document.getElementById("cho_bt").innerHTML = "$" + numberWithCommas(chobt);
-	var choba = 145000000-parseInt(sumVal);
+	var choba = 145000000-parseInt(sumVal) - 5573333;
 	document.getElementById("cho_ba").innerHTML = "$"+numberWithCommas(choba);
 	var table = document.getElementById("table13"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
