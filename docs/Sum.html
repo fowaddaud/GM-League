@@ -725,11 +725,11 @@ function numberWithCommas(x) {
 	document.getElementById("chosum20").innerHTML = "$"+sumVal;
 	document.getElementById("cho_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var chobc = 115000000 - parseInt(sumVal);
+	var chobc = 115000000 - parseInt(sumVal) - 5573333;
 	document.getElementById("cho_bc").innerHTML = "$" + numberWithCommas(chobc);
-	var chobt = 139000000 - parseInt(sumVal);
+	var chobt = 139000000 - parseInt(sumVal) - 5573333;
 	document.getElementById("cho_bt").innerHTML = "$" + numberWithCommas(chobt);
-	var choba = 145000000-parseInt(sumVal);
+	var choba = 145000000 - parseInt(sumVal) - 5573333;
 	document.getElementById("cho_ba").innerHTML = "$"+numberWithCommas(choba);
 	var table = document.getElementById("table13"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
