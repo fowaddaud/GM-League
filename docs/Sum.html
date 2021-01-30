@@ -1531,11 +1531,11 @@ function numberWithCommas(x) {
 	document.getElementById("okcsum20").innerHTML = "$"+sumVal;
 	document.getElementById("okc_pay").innerHTML = "$"+sumVal;
 	sumVal = sumVal.replace(',','');sumVal = sumVal.replace(',','');sumVal = sumVal.replace('$','');sumVal = sumVal.replace(' ','0')
-	var okcbc = 115000000 - parseInt(sumVal) - 999200;
+	var okcbc = 115000000 - parseInt(sumVal) - 5878200;
 	document.getElementById("okc_bc").innerHTML = "$" + numberWithCommas(okcbc);
-	var okcbt = 139000000 - parseInt(sumVal) - 999200;
+	var okcbt = 139000000 - parseInt(sumVal) - 5878200;
 	document.getElementById("okc_bt").innerHTML = "$" + numberWithCommas(okcbt);
-	var okcba = 145000000-parseInt(sumVal) - 999200;
+	var okcba = 145000000-parseInt(sumVal) - 5878200;
 	document.getElementById("okc_ba").innerHTML = "$"+numberWithCommas(okcba);
 	var table = document.getElementById("table26"), sumVal = 0;
       	for(var i = 1; i < table.rows.length; i++){
